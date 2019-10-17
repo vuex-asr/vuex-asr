@@ -1,5 +1,5 @@
 {
-  "name": "@joriswenting/test-with-custom-pluginpath",
+  "name": "vuex-asr",
   "version": "0.1.1",
   "author": "Joris Wenting",
   "license": "MIT",
@@ -10,6 +10,9 @@
     "serve": "vue-cli-service serve example_application/main.js",
     "build": "vue-cli-service build example_application/main.js",
     "lint": "vue-cli-service lint",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "docs:deploy": "./deploy-documentation.sh",
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit"
   },
