@@ -1,26 +1,26 @@
 import Router from "./lib/asr-router";
 import RemoveOldBindings from "./lib/asr-remove-old-bindings";
 
-const AutomatedStoreResolution = {
-    install: function(Vue, options) {
-        Vue.mixin({
-            /*
+const VuexAsr = {
+  install: function(Vue) {
+    Vue.mixin({
+      /*
                   Props
 
                   The 'props' array below translates into the directives of this plugin.
             */
 
-            props: [
-                "asrBindState",
-                "asrBindGetters",
-                "asrBindMutations",
-                "asrBindActions",
-                "asrBindConfig",
-                "asrPass",
-                "asrDebug"
-            ],
+      props: [
+        "asrBindState",
+        "asrBindGetters",
+        "asrBindMutations",
+        "asrBindActions",
+        "asrBindConfig",
+        "asrPass",
+        "asrDebug"
+      ],
 
-            /*
+      /*
                   beforeCreate()
 
                   The plugin injects a Vue instance's store dependencies during the
@@ -28,29 +28,28 @@ const AutomatedStoreResolution = {
                   instantiated and has no access to it's local data.
              */
 
-            beforeCreate() {
+      beforeCreate() {
+        // A lot of vue instances don't have $options set
+        // In that case we can escape execution of this plugin here.
 
-                // A lot of vue instances don't have $options set
-                // In that case we can escape execution of this plugin here.
+        if (this.hasOwnProperty("$options") === false) {
+          return;
+        }
 
-                if (this.hasOwnProperty("$options") === false) {
-                    return;
-                }
+        // Once a component with bindings has been instantiated
+        // the new instance will 'inherit' those bindings.
+        // So if so we'll first remove them.
 
-                // Once a component with bindings has been instantiated
-                // the new instance will 'inherit' those bindings.
-                // So if so we'll first remove them.
+        new RemoveOldBindings(this);
 
-                new RemoveOldBindings(this);
+        // Now the router will proceed further execution of the plugin
 
-                // Now the router will proceed further execution of the plugin
+        new Router(this);
+      },
 
-                new Router(this);
-            },
+      // BELOW CANDIDATE TO REMOVE FROM REPOSITORY, too specific
 
-            // BELOW CANDIDATE TO REMOVE FROM REPOSITORY, too specific
-
-            /*
+      /*
                   Methods
 
                   A global helper method '$instance' allows you to point to
@@ -64,13 +63,13 @@ const AutomatedStoreResolution = {
                   which could be a local data attribute or a store bound one of course.
             */
 
-            methods: {
-                $instance(stringValue) {
-                    return this[stringValue];
-                }
-            }
-        });
-    }
+      methods: {
+        $instance(stringValue) {
+          return this[stringValue];
+        }
+      }
+    });
+  }
 };
 
-export default AutomatedStoreResolution;
+export default VuexAsr;
