@@ -1,17 +1,11 @@
 <template>
   <div class="home">
-    <example-component asr-bind-state="message"></example-component>
+    This is the homepage of the example application
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import ExampleComponent from "../components/ExampleComponent.vue";
-
 export default {
-  name: "home",
-  components: {
-    ExampleComponent
-  }
+  name: "home"
 };
 </script>

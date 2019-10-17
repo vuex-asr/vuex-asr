@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="example-hello-world">
     <example-component asr-bind-state="message"></example-component>
   </div>
 </template>
