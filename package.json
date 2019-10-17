@@ -1,23 +1,27 @@
 {
-  "name": "vuex-asr",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@joriswenting/test-with-custom-pluginpath",
+  "version": "0.1.1",
+  "author": "Joris Wenting",
+  "license": "MIT",
+  "main": "src_plugin/plugin.js",
+  "module": "src_plugin/plugin.js",
+  "private": false,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "serve": "vue-cli-service serve example_application/main.js",
+    "build": "vue-cli-service build example_application/main.js",
     "lint": "vue-cli-service lint",
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
-    "chromedriver": "^77.0.0",
-    "core-js": "^2.6.5",
-    "register-service-worker": "^1.6.2",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
+    "chromedriver": "^77.0.0",
+    "core-js": "^2.6.5",
+    "register-service-worker": "^1.6.2",
     "@vue/cli-plugin-babel": "^3.12.0",
     "@vue/cli-plugin-e2e-nightwatch": "^3.12.0",
     "@vue/cli-plugin-eslint": "^3.12.0",
