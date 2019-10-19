@@ -9,7 +9,7 @@ module.exports = {
       .waitForElementVisible("#app", 5000)
       .assert.elementPresent(".example-component")
       .assert.containsText(
-        "#bind-state-message-example > p",
+        "#bind-state-simple-message-example > p",
         "message in the root of the store"
       )
       .assert.containsText(
@@ -29,7 +29,7 @@ module.exports = {
         "changed by user input"
       )
       .assert.containsText(
-        "#bind-state-message-example > p",
+        "#bind-state-simple-message-example > p",
         "changed by user input"
       )
       .assert.containsText(
