@@ -2,7 +2,7 @@ import Vue from "vue";
 import VuexAsr from "../src/vuex-asr";
 import App from "./App.vue";
 import router from "./router";
-import store from "./store";
+import store from "./vuex/store";
 import "./registerServiceWorker";
 
 Vue.config.productionTip = false;
