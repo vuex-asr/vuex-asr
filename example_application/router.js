@@ -12,13 +12,20 @@ export default new Router({
       component: Home
     },
     {
-      path: "/example-hello-world",
-      name: "Hello World",
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
+      path: "/asr-bind-state-overview",
+      name: "asr-bind-state",
       component: () =>
-        import(/* webpackChunkName: "about" */ "./views/examples/hello-world/Example.vue")
+        import(
+          /* webpackChunkName: "about" */ "./views/AsrBindStateOverview.vue"
+        )
+    },
+    {
+      path: "/example-getters",
+      name: "Getters",
+      component: () =>
+        import(
+          /* webpackChunkName: "about" */ "./views/examples/getters/Example.vue"
+        )
     }
   ]
 });

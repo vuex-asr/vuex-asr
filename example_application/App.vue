@@ -2,7 +2,8 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/example-hello-world">Hello World</router-link> |
+      <router-link to="/asr-bind-state-overview">asr-bind-state</router-link> |
+      <router-link to="/example-getters">Getters</router-link> |
       <router-link to="/about">About</router-link>
     </div>
     <img alt="Vue logo" src="./assets/logo.png" />
@@ -27,5 +28,18 @@
       color: #42b983;
     }
   }
+}
+
+input {
+  width: 40%;
+  background-color: #42b983;
+  color: lightcyan;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 8px 10px;
+  margin: 2px 0;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
 }
 </style>

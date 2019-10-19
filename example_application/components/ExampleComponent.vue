@@ -1,5 +1,5 @@
 <template>
   <div class="example-component">
-    <p>{{ message }}</p>
+    <p class="message">{{ message }}</p>
   </div>
 </template>
