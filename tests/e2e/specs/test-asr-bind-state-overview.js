@@ -29,11 +29,23 @@ module.exports = {
         "changed by user input"
       )
       .assert.containsText(
-        "#bind-state-message-as-v-model-example > p",
+        "#bind-state-message-example > p",
         "changed by user input"
       )
       .assert.containsText(
-        "#bind-state-message-example > p",
+        "#bind-state-message-as-v-model-example > p",
+        "changed by user input"
+      )
+      .setValue(
+        "#bind-state-another-message-as-v-model-example > input",
+        "changed by user input"
+      )
+      .assert.containsText(
+        "#bind-state-another-message-example > p",
+        "changed by user input"
+      )
+      .assert.containsText(
+        "#bind-state-another-message-as-v-model-example > p",
         "changed by user input"
       );
 

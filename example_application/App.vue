@@ -31,15 +31,31 @@
 }
 
 input {
-  width: 40%;
+  width: 60%;
   background-color: #42b983;
   color: lightcyan;
-  font-size: 1.2em;
+  font-size: 1.1em;
   text-align: center;
   padding: 8px 10px;
   margin: 2px 0;
   border: none;
   border-radius: 2px;
   cursor: pointer;
+}
+p.help-text {
+  font-size: 1em;
+}
+
+div.example-component,
+div.example-component-with-input {
+  width: 60%;
+  font-size: 1.1em;
+  margin: 1px auto 1px auto;
+  border: 1px solid #2C3E50;
+  padding: 8px;
+}
+
+div.asr-bind-state-overview {
+  align-text: center;
 }
 </style>
