@@ -1,4 +1,4 @@
-import { ModuleGeneralSettings } from "./module-general-deeper";
+import { ModuleGeneralSettings } from "./module-general-settings";
 
 const ModuleGeneral = {
   namespaced: true,
