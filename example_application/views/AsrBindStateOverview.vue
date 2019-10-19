@@ -1,16 +1,7 @@
 <template>
   <div class="asr-bind-state-overview">
-    <p class="help-text">
-      bind the Store.state.message to the component by attribute
-    </p>
-
     <example-component id="bind-state-message-example" asr-bind-state="message">
     </example-component>
-
-    <p class="help-text">
-      bind the Store.state.anotherMessage to the component and alias it to keep
-      generic
-    </p>
 
     <example-component
       id="bind-state-another-message-example"
@@ -18,20 +9,12 @@
     >
     </example-component>
 
-    <p class="help-text">
-      placeholder
-    </p>
-
     <example-component-with-input
       id="bind-state-message-as-v-model-example"
       asr-bind-state="message IS v-model"
     >
     </example-component-with-input>
 
-    <p class="help-text">
-      placeholder
-    </p>
-      
     <example-component-with-input
       id="bind-state-another-message-as-v-model-example"
       asr-bind-state="anotherMessage AS message IS v-model"

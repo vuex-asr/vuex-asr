@@ -52,7 +52,7 @@ div.example-component-with-input {
   width: 60%;
   font-size: 1.1em;
   font-weight: 300;
-  margin: 1px auto 1px auto;
+  margin: 10px auto 10px auto;
   border: 1px solid #2C3E50;
   padding: 8px;
 }
