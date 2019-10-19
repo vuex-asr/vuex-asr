@@ -7,7 +7,7 @@
   "module": "src_plugin/vuex-asr.js",
   "private": false,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve --watch",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "docs:dev": "vuepress dev docs",
