@@ -34,8 +34,9 @@ input {
   width: 60%;
   background-color: #42b983;
   color: lightcyan;
-  font-size: 1.1em;
   text-align: center;
+  font-size: 1.1em;
+  font-weight: 500;
   padding: 8px 10px;
   margin: 2px 0;
   border: none;
@@ -50,6 +51,7 @@ div.example-component,
 div.example-component-with-input {
   width: 60%;
   font-size: 1.1em;
+  font-weight: 300;
   margin: 1px auto 1px auto;
   border: 1px solid #2C3E50;
   padding: 8px;
