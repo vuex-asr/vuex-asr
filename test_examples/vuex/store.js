@@ -16,6 +16,11 @@ export default new Vuex.Store({
     message: "message in the root of the store",
     anotherMessage: "another message in the root of the store"
   },
+  getters: {
+    messageCapitalized: state => {
+      return state.message.toUpperCase();
+    }
+  },
   mutations: {},
   actions: {}
 });

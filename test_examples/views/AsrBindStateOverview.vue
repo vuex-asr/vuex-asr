@@ -1,7 +1,7 @@
 <template>
   <div class="asr-bind-state-overview">
     <example-component
-      id="bind-state-simple-message-example"
+      id="bind-state-message-from-root-of-store-example"
       asr-bind-state="message"
     />
 

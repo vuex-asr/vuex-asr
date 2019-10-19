@@ -20,12 +20,12 @@ export default new Router({
         )
     },
     {
-      path: "/example-getters",
-      name: "Getters",
+      path: "/asr-bind-getters-overview",
+      name: "asr-bind-getters",
       component: () =>
         import(
-          /* webpackChunkName: "about" */ "./views/examples/getters/Example.vue"
+          /* webpackChunkName: "about" */ "./views/AsrBindGettersOverview.vue"
         )
-    }
+    },
   ]
 });

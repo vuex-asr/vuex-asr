@@ -3,6 +3,7 @@
     <div id="nav">
       <router-link to="/">Vuex ASR</router-link> |
       <router-link to="/asr-bind-state-overview">asr-bind-state</router-link> |
+      <router-link to="/asr-bind-getters-overview">asr-bind-getters</router-link> |
     </div>
     <img alt="Vue logo" src="./assets/logo.png" />
     <router-view />
