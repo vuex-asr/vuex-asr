@@ -1,10 +1,8 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
+      <router-link to="/">Vuex ASR</router-link> |
       <router-link to="/asr-bind-state-overview">asr-bind-state</router-link> |
-      <router-link to="/example-getters">Getters</router-link> |
-      <router-link to="/about">About</router-link>
     </div>
     <img alt="Vue logo" src="./assets/logo.png" />
     <router-view />
@@ -44,7 +42,9 @@ input {
   cursor: pointer;
 }
 p.help-text {
+  width: 60%;
   font-size: 1em;
+  margin: 10px auto;
 }
 
 div.example-component,
@@ -53,11 +53,12 @@ div.example-component-with-input {
   font-size: 1.1em;
   font-weight: 300;
   margin: 10px auto 10px auto;
-  border: 1px solid #2C3E50;
+  border: 1px solid #2c3e50;
   padding: 8px;
 }
 
-div.asr-bind-state-overview {
+div.home, div.asr-bind-state-overview {
   align-text: center;
+  width: 100%;
 }
 </style>
