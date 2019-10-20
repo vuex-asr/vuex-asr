@@ -17,6 +17,11 @@ const ModuleUser = {
     },
     users: []
   },
+  getters: {
+    messageKebabCase: state => {
+      return state.message.replace(/ /g, "-");
+    }
+  },
   mutations: {},
   actions: {}
 };

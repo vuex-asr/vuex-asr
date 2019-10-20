@@ -6,22 +6,20 @@
       asr-debug
     />
 
-
+    <example-component
+      id="bind-getters-namespaced-example"
+      asr-bind-getters="USER|messageKebabCase AS message"
+      asr-debug
+    />
   </div>
 </template>
 
 <script>
-// For this example and test content we use a seperate store
-// for clarity.
-
-// import { AsrBindStateOverviewStore } from "./AsrBindStateOverviewStore";
 import ExampleComponent from "../components/ExampleComponent";
-// import ExampleComponentWithInput from "../components/ExampleComponentWithInput";
 
 export default {
   components: {
-    ExampleComponent,
-    // ExampleComponentWithInput
+    ExampleComponent
   }
 };
 </script>
