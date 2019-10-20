@@ -30,6 +30,22 @@ const ModuleUserSettings = {
         .split("")
         .reverse()
         .join("");
+    },
+    anotherMessageReversed: state => {
+      return state.anotherMessage
+        .split("")
+        .reverse()
+        .join("");
+    }
+  },
+  mutations: {
+    setMessage(state, message) {
+      // mutate state
+      state.message = message;
+    },
+    setAnotherMessage(state, message) {
+      // mutate state
+      state.anotherMessage = message;
     }
   }
 };

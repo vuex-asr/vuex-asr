@@ -21,6 +21,12 @@ export default new Vuex.Store({
       return state.message.toUpperCase();
     }
   },
-  mutations: {},
+  mutations: {
+    setMessage(state, message) {
+      // mutate state
+      console.log("message was mutated");
+      state.message = message;
+    }
+  },
   actions: {}
 });

@@ -27,5 +27,13 @@ export default new Router({
           /* webpackChunkName: "about" */ "./views/AsrBindGettersOverview.vue"
         )
     },
+    {
+      path: "/asr-bind-mutations-overview",
+      name: "asr-bind-mutations",
+      component: () =>
+        import(
+          /* webpackChunkName: "about" */ "./views/AsrBindMutationsOverview.vue"
+        )
+    }
   ]
 });
