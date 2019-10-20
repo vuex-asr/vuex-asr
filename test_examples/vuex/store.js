@@ -28,5 +28,11 @@ export default new Vuex.Store({
       state.message = message;
     }
   },
-  actions: {}
+  actions: {
+    setMessageAsync({commit}, message) {
+      setTimeout(() => {
+        commit('setMessage', message);
+      }, 100)
+    }
+  }
 });

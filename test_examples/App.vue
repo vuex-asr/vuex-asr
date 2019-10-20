@@ -5,6 +5,7 @@
       <router-link to="/asr-bind-state-overview">asr-bind-state</router-link> |
       <router-link to="/asr-bind-getters-overview">asr-bind-getters</router-link> |
       <router-link to="/asr-bind-mutations-overview">asr-bind-mutations</router-link> |
+      <router-link to="/asr-bind-actions-overview">asr-bind-actions</router-link> |
     </div>
     <img alt="Vue logo" src="./assets/logo.png" />
     <router-view />

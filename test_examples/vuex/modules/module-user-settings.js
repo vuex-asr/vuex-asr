@@ -47,6 +47,13 @@ const ModuleUserSettings = {
       // mutate state
       state.anotherMessage = message;
     }
+  },
+  actions: {
+    setAnotherMessageAsync({commit}, message) {
+      setTimeout(() => {
+        commit('setAnotherMessage', message);
+      }, 100)
+    }
   }
 };
 
