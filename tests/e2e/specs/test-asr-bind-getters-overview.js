@@ -15,6 +15,10 @@ module.exports = {
       .assert.containsText(
         "#bind-getters-namespaced-example > p",
         "This-is-a-message-in-the-USER-module"
+      )
+      .assert.containsText(
+        "#bind-getters-deep-namespaced-example > p",
+        "erus rof eludom sgnittes resu eht ni egassem a si sihT"
       );
 
     browser.end();

@@ -23,6 +23,14 @@ const ModuleUserSettings = {
         vModel: true
       }
     ]
+  },
+  getters: {
+    messageReversed: state => {
+      return state.message
+        .split("")
+        .reverse()
+        .join("");
+    }
   }
 };
 

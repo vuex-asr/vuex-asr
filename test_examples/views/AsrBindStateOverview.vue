@@ -33,16 +33,10 @@
 </template>
 
 <script>
-// For this example and test content we use a seperate store
-// for clarity.
-
-// import { AsrBindStateOverviewStore } from "./AsrBindStateOverviewStore";
 import ExampleComponent from "../components/ExampleComponent";
 import ExampleComponentWithInput from "../components/ExampleComponentWithInput";
 
 export default {
-  name: "Asr Bind State Overview",
-  // store: AsrBindStateOverviewStore,
   components: {
     ExampleComponent,
     ExampleComponentWithInput
