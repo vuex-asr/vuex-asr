@@ -17,6 +17,10 @@ module.exports = {
         "another message in the root of the store"
       )
       .assert.containsText(
+        "#bind-state-namespace-example > p",
+        "This is a message in the USER module"
+      )
+      .assert.containsText(
         "#bind-state-message-as-v-model-example > p",
         "message in the root of the store"
       )
