@@ -9,7 +9,7 @@ module.exports = {
             {text: 'Home', link: '/'},
             {text: 'Guide', link: '/learn-by-example/hello-world-example.html'},
             {text: 'Cheatsheet', link: '/helpers/cheat-sheet.html'},
-            {text: 'Contribute', link: '/contribute.html'},
+            {text: 'Contribute', link: '/helpers/contribute.html'},
             {text: 'Github', link: 'https://github.com'}
         ],
         sidebar: [
@@ -50,6 +50,7 @@ module.exports = {
                 sidebarDepth: 1,    // optional, defaults to 1
                 children: [
                     '/helpers/cheat-sheet.html',
+                    '/helpers/working-with-the-test-suite.html',
                 ]
             },
             // {
