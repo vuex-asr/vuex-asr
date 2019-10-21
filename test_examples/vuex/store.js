@@ -32,7 +32,7 @@ export default new Vuex.Store({
     setMessageAsync({commit}, message) {
       setTimeout(() => {
         commit('setMessage', message);
-      }, 1)
+      }, 1000)
     }
   }
 });

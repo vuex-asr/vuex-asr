@@ -52,7 +52,7 @@ const ModuleUserSettings = {
     setAnotherMessageAsync({commit}, message) {
       setTimeout(() => {
         commit('setAnotherMessage', message);
-      }, 1)
+      }, 1000)
     }
   }
 };
