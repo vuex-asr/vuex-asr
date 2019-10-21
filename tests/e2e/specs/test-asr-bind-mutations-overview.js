@@ -1,6 +1,7 @@
 // For authoring Nightwatch tests, see
 // http://nightwatchjs.org/guide#usage
-const url = process.env.VUE_APP_DEV_SERVER_URL + "#/asr-bind-mutations-overview/";
+const url =
+  process.env.VUE_APP_DEV_SERVER_URL + "#/asr-bind-mutations-overview/";
 
 module.exports = {
   "Test for asr-bind-mutations-overview": browser => {
