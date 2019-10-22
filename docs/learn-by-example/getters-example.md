@@ -13,7 +13,7 @@ In the App.vue component we use to demonstrate the use of vuex-asr to bind the `
     <template>
       <div id="app">
         <example-message asr-bind-state="message"/>
-        <example-message asr-bind-getters="messageCapitalized"/>
+        <example-message asr-bind-getters="messageCapitalized AS message"/>
       </div>
     </template>
     
@@ -28,11 +28,11 @@ In the App.vue component we use to demonstrate the use of vuex-asr to bind the `
     };
     </script>
 ```
-Notice the `asr-bind-getters` property in the `<example-message>` component. This binds the `getMessage` getter from the store to the component. If the store updates the state variable `message` the getter `getMessage` will be updated too. And therefor the component that it's bound to too.
+Notice the `asr-bind-getters` property in the `<example-message>` component. This binds the `messageCapitalized` getter from the store to the component. If the store updates the state variable `message` the getter `messageCapitalized` will be updated too. And therefor the bound instance of the component will be update too.
 
 ## aliasing
 
-Although the getter `getMessage` is bound to the example component, the example-component doesn't have a variable to bind it too yet, it uses `message` instead.
+Although the getter `messageCapitalized` is bound to the example component, the example-component doesn't have a variable to bind it too yet, it uses `message` instead.
 
 ```vue{4}
     // src/components/ExampleMessage.vue
