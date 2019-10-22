@@ -1,7 +1,7 @@
 <template>
   <div class="asr-bind-actions-overview">
-    <example-component-with-getter-and-setter
-      id="bind-state-message-with-action-example"
+    <example-component-with-event-handler
+      id="bind-state-message-with-mutation-from-event-handler"
       asr-bind-state="message"
       asr-bind-actions="setMessageAsync AS setMessage"
     />
@@ -21,11 +21,13 @@
 
 <script>
 import ExampleComponent from "../components/ExampleComponent";
+import ExampleComponentWithEventHandler from "../components/ExampleComponentWithEventHandler";
 import ExampleComponentWithGetterAndSetter from "../components/ExampleComponentWithGetterAndSetter";
 
 export default {
   components: {
     ExampleComponent,
+    ExampleComponentWithEventHandler,
     ExampleComponentWithGetterAndSetter
   }
 };
