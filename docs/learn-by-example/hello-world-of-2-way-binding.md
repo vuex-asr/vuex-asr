@@ -10,9 +10,22 @@ For a quick overview go to the sandbox environment to follow along:
 
 To make the store variable `message` (as we used in our previous example) 2-way-bound, we need to tell the component that the variable is a model. (Meaning it implements both a getter and a setter).
 
-::: tip
-Binding a state item and being able to mutate it is called model binding. In this example we are going to bind an item from the state directly as a model. This is quite useful in the rapid-prototyping phase of the project, but *NOT RECOMMENDED* in production. For production it is recommended to use vuex mutations for synchronous and actions for asynchronous mutations of state items. Read more in [advanced 2 way binding](./advanced-2-way-binding.html)
-::: 
+```js{10}
+    // src/vuex/store.js
+    
+    import Vue from "vue";
+    import Vuex from "vuex";
+    
+    Vue.use(Vuex);
+    
+    const Store = new Vuex.Store({
+      state: {
+        message: "This is a message in the Root of VUEX",
+      }
+    });
+    
+    export { Store };
+```
 
 So for this example we have to update our App.vue file:
 ```vue{6}
@@ -60,4 +73,8 @@ and that's all.
 
 If you now change the contents of the message in the input field that is rendered you'll see that also the message in the `example-message` component is updated.
 
-As already stated before vuex-asr was created with the intention of making building large-scale applications easier, we've already discussed aliasing in the 'getters' example but let's how we could use aliasing to make reusability of components a breeze in the next chapter.
+::: warning
+Binding a state item and being able to mutate it is called model binding. In this example we are going to bind an item from the state directly as a model. This is quite useful in the rapid-prototyping phase of the project, but *NOT RECOMMENDED* in production. For production it is recommended to use vuex mutations for synchronous and actions for asynchronous manipulation of state items. Read more in [advanced 2 way binding](./advanced-2-way-binding.html)
+:::
+
+So now you now how to bind a state object as a simple model, let's take a look at how we could bind actions and mutations to take full advantage of vuex state-management. 
