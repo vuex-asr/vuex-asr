@@ -14,7 +14,29 @@ export default new Vuex.Store({
   },
   state: {
     message: "message in the root of the store",
-    anotherMessage: "another message in the root of the store"
+    anotherMessage: "another message in the root of the store",
+    messageConfig: [
+      {
+        binderType: "state",
+        bind: "message"
+      },
+      {
+        binderType: "actions",
+        bind: "setMessageAsync",
+        alias: "setMessage"
+      },
+      {
+        binderType: "getters",
+        bind: "messageCapitalized",
+        alias: "anotherMessage"
+      },
+      {
+        binderType: "state",
+        namespace: "USER/SETTINGS",
+        bind: "message",
+        alias: "userSettingsMessage"
+      }
+    ]
   },
   getters: {
     messageCapitalized: state => {

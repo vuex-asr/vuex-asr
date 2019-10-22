@@ -4,25 +4,7 @@ const ModuleUserSettings = {
   state: {
     message: "This is a message in the user settings module for sure",
     anotherMessage:
-      "This is another message in the user settings module for sure",
-    messageConfig: [
-      {
-        namespace: "GENERAL",
-        bind: "message",
-        vModel: true
-      },
-      {
-        namespace: "GENERAL",
-        bind: "anotherMessage",
-        vModel: true
-      },
-      {
-        namespace: "USER/SETTINGS",
-        bind: "message",
-        as: "userSettingsMessage",
-        vModel: true
-      }
-    ]
+      "This is another message in the user settings module for sure"
   },
   getters: {
     messageReversed: state => {
@@ -49,10 +31,10 @@ const ModuleUserSettings = {
     }
   },
   actions: {
-    setAnotherMessageAsync({commit}, message) {
+    setAnotherMessageAsync({ commit }, message) {
       setTimeout(() => {
-        commit('setAnotherMessage', message);
-      }, 1000)
+        commit("setAnotherMessage", message);
+      }, 1000);
     }
   }
 };
