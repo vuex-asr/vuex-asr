@@ -11,7 +11,7 @@ For a quick overview go to the sandbox environment to follow along:
 To make the store variable `message` (as we used in our previous example) 2-way-bound, we need to tell the component that the variable is a model. (Meaning it implements both a getter and a setter).
 
 ::: tip
-Binding a state item and being able to mutate it is called model binding. In this example we are going to bind an item from the state directly as a model. This is quite useful in the rapid-prototyping phase of the project, but **NOT RECOMMEND** in production. For production it is recommended to use vuex mutations for synchronous and actions for asynchronous mutations of (multiple) state items. Read more in [advanced 2 way binding](./advanced-2-way-binding.html)
+Binding a state item and being able to mutate it is called model binding. In this example we are going to bind an item from the state directly as a model. This is quite useful in the rapid-prototyping phase of the project, but *NOT RECOMMENDED* in production. For production it is recommended to use vuex mutations for synchronous and actions for asynchronous mutations of state items. Read more in [advanced 2 way binding](./advanced-2-way-binding.html)
 ::: 
 
 So for this example we have to update our App.vue file:
