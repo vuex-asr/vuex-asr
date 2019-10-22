@@ -10,9 +10,8 @@ Mutations are methods used in the store to change/mutate the state and keep trac
 Keeping track of mutations is very handy for debugging. It's recommended to download the [vue.js devtools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) for chrome. If you go to the `Vuex` tab in it you'll see your mutations and state. 
 :::
 
-## asr implementation
+## the store
 
-### the store
 Let's take a look at the following store,
 
 ```js{5,8,9,10}
@@ -31,7 +30,7 @@ export default new Vuex.Store({
 });
 ```
 
-### Creating a two way binding with a state item and a mutation
+## Creating a two way binding with a state item and a mutation
 
 We bind a state item and a mutation to a component
 
@@ -67,9 +66,9 @@ Notice we bind the message to the value of the input and at an event-handler tha
 
 And voila we have a nice two way binding at our hands.
 
-### aliasing
+## aliasing
 
-Since we are also able to alias our mutations and actions we could easily reuse this component to create an instance with other store bindings:
+Since we are also able to alias our mutations we could easily reuse this component to create an instance with other store bindings:
 
 asume we have:
 ```js{6,13-16}
@@ -112,7 +111,7 @@ now we could bind the component like this:
   ...
 ```
 
-### namespacing
+## namespacing
 
 As namespacing is a generic feature of vuex-asr could work like this:
 
