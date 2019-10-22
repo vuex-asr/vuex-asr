@@ -9,16 +9,16 @@ module.exports = {
       .waitForElementVisible("#app", 5000)
       .assert.elementPresent(".example-component")
       .assert.containsText(
-        "#bind-state-message-with-action-example > p",
+        "#bind-state-message-with-mutation-from-event-handler > p",
         "message in the root of the store"
       )
       .setValue(
-        "#bind-state-message-with-action-example > input",
+        "#bind-state-message-with-mutation-from-event-handler > input",
         "changed by user input"
       )
       .pause(1000)
       .assert.containsText(
-        "#bind-state-message-with-action-example > p",
+        "#bind-state-message-with-mutation-from-event-handler > p",
         "changed by user input"
       )
       .assert.value(
