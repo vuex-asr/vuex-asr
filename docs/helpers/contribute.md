@@ -31,10 +31,16 @@ Use the sandboxes to create examples and share your implementations and experien
 where to discuss ideas?
 :::
 
+## Todo before release 0.7RC
+
+ :black_square_button: Organise releases of plugin (release branche, publisch package from release branch)  
+ :black_square_button: TodoMVC example (with Victor, after pre-release and packaging)
+
+
 ## Whishlist / Roadmap
 
 - Improve testing
 - Add list with code-examples
-- TodoMVC example
+- TodoMVC example (met Victor doen, na pre-release en packaging)
 - Free repository with generic components capable of being integrated in a vuex-asr stateful project.
 - Make ready for Vue 3.x
