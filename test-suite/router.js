@@ -42,6 +42,14 @@ export default new Router({
         import(
           /* webpackChunkName: "about" */ "./views/AsrBindActionsOverview.vue"
         )
+    },
+    {
+      path: "/asr-bind-config-overview",
+      name: "asr-bind-config",
+      component: () =>
+        import(
+          /* webpackChunkName: "about" */ "./views/AsrBindConfigOverview.vue"
+        )
     }
   ]
 });

@@ -14,10 +14,9 @@
     </p>
 
     <p class="help-text">
-      To keep the the examples and tests lean and simple they are build
-      with the analogy of having messages in the store and being able to mutate
-      them. But of course you are able to bind any datatype (and method)
-      available.
+      To keep the the examples and tests lean and simple they are build with the
+      analogy of having messages in the store and being able to mutate them. But
+      of course you are able to bind any datatype (and method) available.
     </p>
   </div>
 </template>

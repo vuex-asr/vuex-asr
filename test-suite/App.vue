@@ -6,6 +6,7 @@
       <router-link to="/asr-bind-getters-overview">asr-bind-getters</router-link> |
       <router-link to="/asr-bind-mutations-overview">asr-bind-mutations</router-link> |
       <router-link to="/asr-bind-actions-overview">asr-bind-actions</router-link> |
+      <router-link to="/asr-bind-config-overview">asr-bind-config</router-link>
     </div>
     <img alt="Vue logo" src="./assets/logo.png" />
     <router-view />
@@ -51,7 +52,8 @@ p.help-text {
 }
 
 div.example-component,
-div.example-component-with-input {
+div.example-component-with-input,
+div.example-component-bind-config {
   width: 60%;
   font-size: 1.1em;
   font-weight: 300;
@@ -60,7 +62,8 @@ div.example-component-with-input {
   padding: 8px;
 }
 
-div.home, div.asr-bind-state-overview {
+div.home,
+div.asr-bind-state-overview {
   align-text: center;
   width: 100%;
 }
