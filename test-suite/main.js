@@ -5,6 +5,7 @@ import router from "./router";
 import store from "./vuex/store";
 import "./registerServiceWorker";
 
+Vue.config.devtools = true;
 Vue.config.productionTip = false;
 Vue.use(VuexAsr);
 
