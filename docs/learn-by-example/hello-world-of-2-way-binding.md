@@ -10,7 +10,11 @@ For a quick overview go to the sandbox environment to follow along:
 
 To make the store variable `message` (as we used in our previous example) 2-way-bound, we need to tell the component that the variable is a model. (Meaning it implements both a getter and a setter).
 
-So let's update our App.vue file:
+::: tip
+Binding a state item and being able to mutate it is called model binding. In this example we are going to bind an item from the state directly as a model. This is quite useful in the rapid-prototyping phase of the project, but **NOT RECOMMEND** in production. For production it is recommended to use vuex mutations for synchronous and actions for asynchronous mutations of (multiple) state items. Read more in [advanced 2 way binding](./advanced-2-way-binding.html)
+::: 
+
+So for this example we have to update our App.vue file:
 ```vue{6}
     // src/App.vue
     
@@ -54,6 +58,6 @@ Now that we have our variable message availlable as a model we can simply assign
 ```
 and that's all.
 
-If you now change the contents of the message in the input field that is rendered you'll see that also the message in the `example-message` component is updated. cool right 😎
+If you now change the contents of the message in the input field that is rendered you'll see that also the message in the `example-message` component is updated.
 
-But as I already stated VUEX-ASR was created with the intention of making building large-scale applications easier, so let's jump to the next subject of Aliasing where we can see how we could use aliasing to make reusability of components a breeze.
+As already stated before vuex-asr was created with the intention of making building large-scale applications easier, we've already discussed aliasing in the 'getters' example but let's how we could use aliasing to make reusability of components a breeze in the next chapter.
