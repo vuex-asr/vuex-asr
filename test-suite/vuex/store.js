@@ -23,16 +23,15 @@ export default new Vuex.Store({
   },
   mutations: {
     setMessage(state, message) {
-      // mutate state
-      console.log("message was mutated");
+      console.log("message was mutated with", message);
       state.message = message;
     }
   },
   actions: {
-    setMessageAsync({commit}, message) {
+    setMessageAsync({ commit }, event) {
       setTimeout(() => {
-        commit('setMessage', message);
-      }, 1000)
+        commit("setMessage", event.target.value);
+      }, 1000);
     }
   }
 });
