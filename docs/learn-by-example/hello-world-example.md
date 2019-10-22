@@ -46,7 +46,7 @@ In the main.js file we implement the store we've created in `src/vuex/store.js`
       store: Store
     }).$mount("#app");
 ```
-And actually this is all we have to do to start making use of the Vuex ASR functionality.
+And actually this is all we have to do to start making use of the vuex-asr functionality.
 
 ## the App component
 
@@ -83,4 +83,4 @@ In the example component we now just can use the variable `message`
       <p>{{ message }}</p>
     </template>
 ```
-This is the simplest implementation of Vuex ASR. In the next chapter you'll see how you could also bind a getter.
+This is the simplest implementation of vuex-asr. In the next chapter you'll see how you could also bind a getter.

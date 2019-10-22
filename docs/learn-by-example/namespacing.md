@@ -14,7 +14,7 @@ There are many reasons as much as ways to organise your code. And I'm not here t
 
 ## vuex namespacing
 
-Since VUEX offers you an out-of-the box solution to organise your store, VuexASR follows this and enables you to namespace your store objects as well.
+Since VUEX offers you an out-of-the box solution to organise your store, vuex-asr follows this and enables you to namespace your store objects as well.
 
 Let's take a look at the [previous example](./aliasing.html) and extend our store with a User Module:
 ```js{5,11}
@@ -60,8 +60,8 @@ As you can see nothing complicated going on here, we just have another string as
     <template>
       <div id="app">
         <example-message asr-bind-state="message"/>
-    	  <example-message asr-bind-state="anotherMessage AS message"/>
-    	  <example-message asr-bind-state="USER|message"/>
+    	<example-message asr-bind-state="anotherMessage AS message"/>
+    	<example-message asr-bind-state="USER|message"/>
     
         <text-input asr-bind-state="message IS v-model"/>
         <text-input asr-bind-state="anotherMessage AS message IS v-model"/>

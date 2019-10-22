@@ -6,9 +6,9 @@ For a quick overview go to the sandbox environment to follow along:
 
 ## passing a binding to a child component
 
-This is in my opinion one of the most important features of the Vuex ASR plugin. It gives you the ability to pass model-bindings to a child component.
+This is in my opinion one of the most important features of the vuex-asr plugin. It gives you the ability to pass model-bindings to a child component.
 
-This means that a model that has already been bound to the component, either via Vuex ASR or conventionally in the component itself will be `passable` to a child component. Giving you ultimate flexibility in organising and generalising your codebase.
+This means that a model that has already been bound to the component, either via vuex-asr or conventionally in the component itself will be `passable` to a child component. Giving you ultimate flexibility in organising and generalising your codebase.
 
 You could use asr-pass also in conventional Vue (or Vuex) projects, it instantly gives you the flexibility from being able to omit direct bindings in your child templates 😎
 

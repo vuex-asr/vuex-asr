@@ -34,13 +34,14 @@ notice that this component takes 3 variables:
 - messageUser
 
 Now let's see how we could bind objects to these variables:
-```vue{6,7,8}
+```vue{6-9}
     // src/App.vue
     
     <template>
       <div id="app">
     		<message-board
-    	      asr-bind-state="message, 
+    	      asr-bind-state="
+    	                message, 
     	                anotherMessage, 
     	                USER|message AS messageUser"
     	  ></message-board>
@@ -72,7 +73,8 @@ There is an important convention for the namespace pipe syntax and it is as foll
 All variables declared after a pipe must be in the same namespace (module), up until a new namespace is declared. Before a namespace has been declared VUEXasr assumes the variables live in the global (root) namespace, so therefor these MUST be declared first. 
 ```vue 
     <some-component
-      asr-bind-state="message, 
+      asr-bind-state="
+                message, 
                 anotherMessage, 
                 USER|messageUser AS message, userObject,
                 PHOTOS|recentPhotos, likedPhotos"

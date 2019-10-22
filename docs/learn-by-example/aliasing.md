@@ -2,7 +2,7 @@
 
 In the [hello world example](./hello-world-example.html) we saw that we can bind a variable from the store to the component with asr-bind-state. In the [hello world of 2 way binding example](./hello-world-of-2-way-binding.html) we saw we can bind a model that can mutate a store object.
 
-Now it's time to see how we can make a component reusable by making use of the alias function of Vuex ASR.
+Now it's time to see how we can make a component reusable by making use of the alias function of vuex-asr.
 
 For a quick overview go to the sandbox environment to follow along:
 
@@ -13,7 +13,7 @@ For a quick overview go to the sandbox environment to follow along:
 A lot of programmers would say that the holy grail of programming is avoiding repetition of code. In other words make code as generic as possible to be able to reuse it. 2-way-binding up until now has been quite a pain in the ass since we need to explicitly tell a component to what store objects (a.k.a. store variables) it is bound.
 
 ::: tip
-Vuex ASR hoists model binding to the attribute level of the component, meaning that the component itself could have generic names, that are independent of the name of the model to be bound.
+vuex-asr hoists model binding to the attribute level of the component, meaning that the component itself could have generic names, that are independent of the name of the model to be bound.
 ::: 
 
 This might sound a bit abstract, let's take a look at what this means:

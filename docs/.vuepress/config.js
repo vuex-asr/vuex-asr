@@ -41,7 +41,6 @@ module.exports = {
                     '/learn-by-example/aliasing.html',
                     '/learn-by-example/namespacing.html',
                     '/learn-by-example/passing-bindings.html',
-                    '/learn-by-example/advanced-2-way-binding.html',
                     '/learn-by-example/binding-multiple-objects-to-a-component.html',
                     '/learn-by-example/binding-a-configuration.html',
                 ]
