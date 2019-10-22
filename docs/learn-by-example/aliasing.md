@@ -20,8 +20,6 @@ This might sound a bit abstract, let's take a look at what this means:
 
 ## anotherMessage AS message
 
-VuexASR is here to prevent you from doing so. Let's see how this works out. 
-
 Let's say we have two messages in our store:
 ```js{8}
     // src/vuex/store
