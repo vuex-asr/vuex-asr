@@ -10,7 +10,7 @@ npm start serve
 
 Open the url provided by the server.
 
-## Automated Testing
+## automated testing
 
 To run the tests you could work with a headless version of chrome by running a docker instance:
  
