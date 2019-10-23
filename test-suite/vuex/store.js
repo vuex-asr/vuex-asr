@@ -53,7 +53,7 @@ export default new Vuex.Store({
     setMessageAsync({ commit }, event) {
       setTimeout(() => {
         commit("setMessage", event.target.value);
-      }, 1000);
+      }, 100);
     }
   }
 });
