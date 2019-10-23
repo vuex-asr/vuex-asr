@@ -1,6 +1,6 @@
 # hello world example
 
-In the example below I'll give you an example of the most basic implementation of VUEX-ASR.
+In the example below you find an example of the most basic implementation of vuex-asr.
 
 For a quick overview go to the sandbox environment to follow along:
 
@@ -29,7 +29,11 @@ As you can see, we've created a variable `message` in the state section of the s
 
 ## the application file main.js
 
-In the main.js file we implement the store we've created in `src/vuex/store.js` 
+In the main.js file we implement the store we've created in `src/vuex/store.js` and `use` our plugin.
+
+::: warning
+DEV: update import statement when sandbox is online
+::: 
 
 ```js{5,6,8,12}
     // src/main.js
@@ -50,7 +54,7 @@ And actually this is all we have to do to start making use of the vuex-asr funct
 
 ## the App component
 
-In the App.vue component we use to demonstrate the use of vuex-asr to bind the `message` value from the store to a component:
+In the App.vue component we use vuex-asr to bind the `message` value from the store to a component:
 ```vue{5}
     // src/App.vue
     
@@ -71,7 +75,7 @@ In the App.vue component we use to demonstrate the use of vuex-asr to bind the `
     };
     </script>
 ```
-Notice the `asr-bind-state` property in the `<example-message>` component. This binds the `message` variable from the store to the component. If the store updates the message variable the component that it's bound to will update automatically.
+Notice the `asr-bind-state` property in the `<example-message>` component. This binds the `message` variable from the store to the component. If the store updates the message variable all components that it's bound to will update automatically.
 
 ## the Example Message component
 
