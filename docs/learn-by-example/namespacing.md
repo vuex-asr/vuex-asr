@@ -10,11 +10,22 @@ For a quick overview go to the sandbox environment to follow along:
 
 ## code organisation
 
-There are many reasons as much as ways to organise your code. And I'm not here to tell you how to organise it. But in order to be able to organise it, you need at least to be able to namespace the aspects of your application.
+There are many reasons as much as ways to organise your code. And I'm not here to tell you how to organise it. A great help in organising code is by using namespaces to address the different aspects of your application.
 
 ## vuex namespacing
 
 Since VUEX offers you an out-of-the box solution to organise your store, vuex-asr follows this and enables you to namespace your store objects as well.
+
+## namespace convention for all binders
+
+The examples in this chapter illustrate how you could implement namespacing with `asr-bind-state`, but the convention is the same for all of the binders:
+- asr-bind-state
+- asr-bind-getters
+- asr-bind-mutations
+- asr-bind-actions
+- asr-bind-config
+
+## example
 
 Let's take a look at the [previous example](./aliasing.html) and extend our store with a User Module:
 ```js{5,11}
@@ -39,7 +50,7 @@ Let's take a look at the [previous example](./aliasing.html) and extend our stor
     export { Store };
 ```
 Notice the `modules` property added to the store. In here we've created the namespace `USER` to which we assign the imported module.
-```js{6}
+```js{4,6}
     // src/vuex/modules/module-user.js
     
     const ModuleUser = {
@@ -51,7 +62,7 @@ Notice the `modules` property added to the store. In here we've created the name
     
     export { ModuleUser };
 ```
-As you can see nothing complicated going on here, we just have another string as a message. But notice the property `namespaced` set to `true`. This tell's vuex to use namespacing for this module, if you omit this the variables in this module would be available at rootlevel, and in our case create a naming conflict since we already have `message` defined in the root (store.js) file.
+As you can see nothing complicated going on here, we just have another string as a message. The property `namespaced` set to `true` tell's vuex to use namespacing for this module, if you omit this the variables in this module would be available at rootlevel, and in our case create a naming conflict since we already have `message` defined in the root (store.js) file.
 
 ## the App component
 ```vue{7,11}
@@ -71,8 +82,27 @@ As you can see nothing complicated going on here, we just have another string as
     
     ...
 ```
-Notice the namespace-pipe-variable syntax: `USER|message`
+Notice the namespace-pipe-variable syntax: `USER|message` In the chapter [binding multiple objects to a component](./binding-multiple-objects-to-a-component.html) you can see the `|` character as this comes in handy in assigning multiple objects to the asr-bind-state property.
 
-This is all you need to do to tell VUEXasr to pick the message object from the user-module.
+## deeper namespaces
 
-In the next chapter you can see why we choose the `|` character as this comes in handy in assigning multiple opjects to the asr-bind-state property, for even more power ⚡️.
+If we have a deeper namespace we extend the namespace with the `/` character:
+
+For example binding a message from the USER/SETTINGS namespace:
+```vue
+    // src/App.vue
+    
+    <template>
+      <div id="app">
+        <text-input asr-bind-state="USER/SETTINGS|message IS v-model"/>
+      </div>
+    </template>
+    
+    ...
+```
+## next steps
+In the next chapter you learn how the `asr-pass` helper function comes in handy when building more complex components that have sub-components with store dependencies.
+
+
+
+
