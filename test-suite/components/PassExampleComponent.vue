@@ -1,6 +1,6 @@
 <template>
   <div class="pass-example-component">
-    <example-component-with-input asr-pass="message" />
+    <example-component-with-input asr-pass="message" asr-debug/>
   </div>
 </template>
 
