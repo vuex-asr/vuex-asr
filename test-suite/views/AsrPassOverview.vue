@@ -1,7 +1,7 @@
 <template>
   <div class="asr-bind-actions-overview">
     <pass-example-component
-      asr-bind-state="message AS v-model"
+      asr-bind-state="message IS v-model"
       asr-debug
     ></pass-example-component>
   </div>
