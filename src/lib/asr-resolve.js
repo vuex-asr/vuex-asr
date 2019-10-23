@@ -167,8 +167,6 @@ export default class Resolve {
         ? this.configBindersForMethods
         : [];
 
-    // console.log("this.configBindersForMethods", this.configBindersForMethods);
-
     // Merge the arrays into one
 
     this.bindersArrayForMethods = [
