@@ -6,7 +6,8 @@
       <router-link to="/asr-bind-getters-overview">asr-bind-getters</router-link> |
       <router-link to="/asr-bind-mutations-overview">asr-bind-mutations</router-link> |
       <router-link to="/asr-bind-actions-overview">asr-bind-actions</router-link> |
-      <router-link to="/asr-bind-config-overview">asr-bind-config</router-link>
+      <router-link to="/asr-bind-config-overview">asr-bind-config</router-link> |
+      <router-link to="/asr-pass-overview">asr-pass</router-link>
     </div>
     <img alt="Vue logo" src="./assets/logo.png" />
     <router-view />

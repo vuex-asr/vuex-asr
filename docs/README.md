@@ -2,9 +2,7 @@
 
 #### Quick summary
 
-Vuex ASR leverages the ability to bind store items to a component by attribute. It also enables you to map the store items to the nameconvention you use in your components, This means that your components code becomes independent from the store.
-
-< MVC pattern story >
+Vuex-asr removes the necessity to describe your vuex store bindings in the component's script (state, getters, mutations, actions). The plugin automatically resolves  bindings and is able to map them from the component's attributes, allowing your component's code to become **generic** and **independent** from the Vuex store :sunglasses:.
 
 You can find the repository here:
 < link to vuex-asr repository >
@@ -15,11 +13,11 @@ You can find the repository here:
 
 ### How do I get set up? ###
 
-Follow this manuals learn by example, the hello world example <link> contains full setup and also a link to a code-sandbox to fiddle around without having to setup.
+Follow this manuals [learn by example](./learn-by-example.html), the hello world example <link> contains full setup and also a link to a code-sandbox to fiddle around.
 
 ### Contribution guidelines ###
 
-Visit the contribute <link> page.
+Visit the [contribute](./helpers/contribute.html) page.
 
 ### Who do I talk to? ###
 

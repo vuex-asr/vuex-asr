@@ -1,10 +1,10 @@
 # actions
 
-Vuex offers a great way to mutate state items with the use of mutations and actions. Vuex-asr enables you to bind those actions and mutations the same way you could bind [state](./hello-world-example.html) and [getters](getters-example.html). In this chapter we discuss the use of actions.
+Vuex offers a great way to mutate state items with the use of mutations and actions. Vuex-asr enables you to bind those actions and mutations the same way you could bind [state](./hello-world-example.html) and [getters](getters-example.html) by the component's attributes. In this chapter we discuss the use of actions.
 
 ## vuex actions in a nutshell
 
-Actions are methods in the store used for asynchronous interaction of data typically triggered by an event. You could use an action to do an async action like fetching data from an API and `commit` the received data as a mutation to mutate the state. You could make multiple commits in an action and you have access to all of the state and mutations in the store (and it's namespaces).
+Actions are methods in the store used for asynchronous interaction of data, typically triggered by an event, like fetching data from an API and `commit` the received data as a mutation to mutate the state. You could make multiple commits in an action and you have access to all of the state and mutations in the store (and it's namespaces).
 ::: tip
 Keeping track of mutations (e.g. triggered by actions) is very handy for debugging. It's recommended to download the [vue.js devtools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) for chrome. If you go to the `Vuex` tab in it you'll see your mutations and state. 
 :::
@@ -14,13 +14,13 @@ You could read more about actions in the [vuex guide/actions](https://vuex.vuejs
 ## when to use a mutation or an action
 
 This convention could help you to decide to use mutations or actions:
- - if you just update a **single** state item, you could use a mutation, but more elegantly it would be to create an action that commits a mutation.
- - If you have to update **multiple** state items in one method you should use an action.
+ - if you are updating a **single** state item, you could use a mutation, but more elegantly it would be to create an action that commits a mutation.
+ - If you have to update **multiple** state items or have an asynchronous procedure in one method you should always use an action.
 
 ## the store
 Let's take a look at the following store,
 
-```js{5,8-11,14-17}
+```js{5,8-11,14-19}
 // src/vuex/store.js
 
 export default new Vuex.Store({
@@ -36,6 +36,7 @@ export default new Vuex.Store({
   actions: {
     setMessageAsync({ commit }, event) {
       setTimeout(() => {
+        // NOTE: one or more commits possible
         commit("setMessage", event.target.value);
       }, 1000);
     }
@@ -63,7 +64,7 @@ We bind a state item and an action to a component
   ...
 ```
 The component now has state item `message` and method `setMessage` available: 
-(note that the component below is still the same component we used in the mutations example..)
+(note that the component below is still the same component we used in the mutations example)
 
 ```vue{5}
 // src/components/ExampleMessageWithEventHandler.vue
@@ -76,7 +77,7 @@ The component now has state item `message` and method `setMessage` available:
 ```
 Notice we bind the `message` to the value attribute of of the `input` element and an event-handler `setMessage` that get's triggered at the keyup event.
 
-And voila we have a nice two way binding at our hands.
+And voila we have a nice two way binding at our hands implementing an action.
 
 ## aliasing
 
@@ -132,7 +133,7 @@ As [namespacing](./namespacing.html) is a generic feature of vuex-asr could work
   <example-component-with-event-handler
     asr-bind-state="GENERAL|anotherMessage AS message"
     asr-bind-actions="GENERAL|setAnotherMessageAsync AS setMessage"
-  />. 
+  />
 
   </template>
   
@@ -140,5 +141,4 @@ As [namespacing](./namespacing.html) is a generic feature of vuex-asr could work
 ```
 ## next steps
 
-In the next chapter we go deeper into [namespacing](./namespacing.html) and how it could help us to organise our front-
-end codebase. 
+In the next chapters we go deeper into [aliasing](./aliasing.html) and [namespacing](./namespacing.html) and how these features could help us to improve the organisation of our front-end codebase. 

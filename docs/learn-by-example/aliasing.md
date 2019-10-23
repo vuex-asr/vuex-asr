@@ -1,8 +1,8 @@
 # aliasing
 
-In the [hello world example](./hello-world-example.html) we saw that we can bind a variable from the store to the component with asr-bind-state. In the [hello world of 2 way binding example](./hello-world-of-2-way-binding.html) we saw we can bind a model that can mutate a store object.
+In the [hello world example](./hello-world-example.html) we saw that we can bind a variable from the store to the component with `asr-bind-state`. In the [hello world of 2 way binding example](./hello-world-of-2-way-binding.html) we saw we can bind a model that can mutate a store object.
 
-Now it's time to see how we can make a component reusable by making use of the alias function of vuex-asr.
+Now it's time to see how we can make a component reusable by making use of the aliasing functionality of vuex-asr.
 
 For a quick overview go to the sandbox environment to follow along:
 
@@ -10,7 +10,7 @@ For a quick overview go to the sandbox environment to follow along:
 
 ## reusability
 
-A lot of programmers would say that the holy grail of programming is avoiding repetition of code. In other words make code as generic as possible to be able to reuse it. 2-way-binding up until now has been quite a pain in the ass since we need to explicitly tell a component to what store objects (a.k.a. store variables) it is bound.
+A lot of programmers would say that the holy grail of programming is avoiding repetition of code. In other words making code as generic as possible to be able to reuse it. Two-way-binding up until now has been quite a pain in the ass since we need to explicitly tell a component to what store objects (state, getters, mutations and actions) it is bound.
 
 ::: tip
 vuex-asr hoists model binding to the attribute level of the component, meaning that the component itself could have generic names, that are independent of the name of the model to be bound.
@@ -62,9 +62,9 @@ Now let's see if we can display them both using the same components as we used i
     };
     </script>
 ```
-Notice that we use the `AS` keyword that tells to use `anotherMessage` as `message`. So the components `<example message>` and `<text-input>` could remain using message in their template.
+Notice that we use the `AS` keyword to map `anotherMessage` to `message`. So the components `<example message>` and `<text-input>` can remain using the variable `message` in their template.
 
-Also notice that (of course) we still are able to use the `IS` keyword to tell vuex asr that anotherMessage is a model that could be mutated.
+Also notice that we are still able to use the `IS` keyword to tell vuex-asr that `anotherMessage` is a model.
 
 For completeness:
 
@@ -84,6 +84,8 @@ For completeness:
     </template>
 ```
 
-So this means a **generic** name in the component and specific names in the store. 
+So this means a **generic** name in the component and specific names in the store correctly mapped in the component's attribute offering a lot of flexibility :nerd_face:. 
 
-Here an image of something happy
+## next steps
+
+In the next chapter we go deeper into [namespacing](./namespacing.html) and how this feature could help us to further improve the organisation of our front-end codebase. 

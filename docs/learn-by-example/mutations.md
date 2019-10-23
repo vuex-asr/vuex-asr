@@ -1,13 +1,13 @@
 # mutations
 
-Vuex offers a great way to mutate state items with the use of mutations and actions. Vuex-asr enables you to bind those actions and mutations the same way you could bind [state](./hello-world-example.html) and [getters](getters-example.html). In this chapter we discuss the use of mutations.
+Vuex offers a great way to mutate state items with the use of mutations and actions. Vuex-asr enables you to bind those actions and mutations the same way you could bind [state](./hello-world-example.html) and [getters](getters-example.html) by the component's attributes. In this chapter we discuss the use of mutations.
 
 ## vuex mutations in a nutshell
 
-Mutations are methods used in the store to change/mutate the state and keep track of those changes/mutations. You could read more about mutations in the [vuex guide/mutations](https://vuex.vuejs.org/guide/mutations.html).
+Mutations are methods used in the store to change/mutate the state and keep track of those changes/mutations. Read more about mutations in the [vuex guide/mutations](https://vuex.vuejs.org/guide/mutations.html).
 
 ::: tip
-Keeping track of mutations is very handy for debugging. It's recommended to download the [vue.js devtools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) for chrome. If you go to the `Vuex` tab in it you'll see your mutations and state. 
+Keeping track of mutations is very helpful for debugging. It's recommended to download the [vue.js devtools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) for chrome. If you go to the `Vuex` tab, you'll see your mutations and state. 
 :::
 
 ## the store
@@ -30,26 +30,26 @@ export default new Vuex.Store({
 });
 ```
 
-## Creating a two way binding with a state item and a mutation
+## creating a two way binding with a state item and a mutation
 
 We bind a state item and a mutation to a component
 
-```vue{7,8}
+```vue{7}
  // src/App.vue
  
  <template> 
  
-  <example-component-with-event-handler
-    asr-bind-state="message"
-    asr-bind-mutations="setMessage"
-  />. 
+   <example-component-with-event-handler
+     asr-bind-state="message"
+     asr-bind-mutations="setMessage"
+   />
 
-  </template>
+ </template>
   
   ...
 ```
 
-The component now has state item 'message' and method 'setMessage' available:
+The component now has state item `message` and method `setMessage` available:
 
 ```vue{6}
 // src/components/ExampleMessageWithEventHandler.vue
@@ -63,7 +63,7 @@ The component now has state item 'message' and method 'setMessage' available:
 ```
 Notice we bind the message to the value of the input and an event-handler that get's triggered at keyup.
 
-And voila we have a nice two way binding at our hands.
+And voila we have a nice two way binding at our hands implementing a mutation.
 
 ## aliasing
 
@@ -103,7 +103,7 @@ now we could bind the component like this with our `alias syntax`:
   <example-component-with-event-handler
     asr-bind-state="anotherMessage AS message"
     asr-bind-mutations="setAnotherMessage AS setMessage"
-  />. 
+  />
 
   </template>
   
@@ -111,8 +111,7 @@ now we could bind the component like this with our `alias syntax`:
 ```
 
 ## namespacing
-
-As [namespacing](./namespacing.html) is a generic feature of vuex-asr could work like this:
+Namespacing is discussed in more detail [here](./namespacing.html), but for convenience below an example with a mutation:
 
 ```vue{6,7}
  // src/App.vue

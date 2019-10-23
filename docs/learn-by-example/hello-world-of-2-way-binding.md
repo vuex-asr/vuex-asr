@@ -1,6 +1,6 @@
 # hello world of 2 way binding
 
-In the [hello world example](./hello-world-example.html) and [getters example](./getters-example.html)we saw that we can bind a variable or a getter from the store to the component with `asr-bind-state` and `asr-bind-getters`. Now let's see if we can update the variable in one component and see it being updated in the other. For this we'll extend our hello world example.
+In the [hello world example](./hello-world-example.html) and [getters example](./getters-example.html) we saw that we can bind a variable or a getter from the store to the component with `asr-bind-state` and `asr-bind-getters`. Now let's see if we can update the variable in one component and have it being updated in the other. For this we'll extend our hello world example.
 
 For a quick overview go to the sandbox environment to follow along:
 
@@ -62,6 +62,8 @@ or simpler:
 ## the Text Input component
 
 Now that we have our variable message available as a model we can simply assign it to an input's v-model property:
+
+
 ```vue{4}
     // src/components/TextInput.vue
     
@@ -69,12 +71,16 @@ Now that we have our variable message available as a model we can simply assign 
       <input v-model="message">
     </template>
 ```
-and that's all.
+::: tip
+For more on this see [Vue documentation on v-model](https://vuejs.org/v2/guide/forms.html?) 
+::: 
 
 If you now change the contents of the message in the input field that is rendered you'll see that also the message in the `example-message` component is updated.
 
-::: tip
-Binding a state item and being able to mutate it is called model binding. In this example we are going to bind an item from the state directly as a model. This is quite useful in the rapid-prototyping phase of the project, but *NOT RECOMMENDED* in production. For production it is recommended to use vuex mutations for synchronous- and actions for asynchronous manipulation of state items. Read more in [advanced 2 way binding](./advanced-2-way-binding.html)
+::: warning
+Binding a state item and being able to mutate it is called **2 way model binding**. In this example we are going to bind an item from the state directly as a model. This is quite useful in the rapid-prototyping phase of the project, but *NOT RECOMMENDED* in production. For production it is recommended to use vuex mutations for synchronous- and actions for asynchronous manipulation of state items. Read more in [advanced 2 way binding](./advanced-2-way-binding.html)
 :::
+
+## next steps
 
 So now you now how to bind a state object as a simple model, let's take a look at how we could bind actions and mutations to take full advantage of vuex state-management. 

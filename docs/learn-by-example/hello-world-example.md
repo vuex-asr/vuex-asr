@@ -87,4 +87,7 @@ In the example component we now just can use the variable `message`
       <p>{{ message }}</p>
     </template>
 ```
+
+## next steps
+
 This is the simplest implementation of vuex-asr. In the next chapter you'll see how you could also bind a getter.

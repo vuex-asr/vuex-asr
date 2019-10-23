@@ -44,6 +44,12 @@ export default new Router({
         )
     },
     {
+      path: "/asr-pass-overview",
+      name: "asr-pass",
+      component: () =>
+        import(/* webpackChunkName: "about" */ "./views/AsrPassOverview.vue")
+    },
+    {
       path: "/asr-bind-config-overview",
       name: "asr-bind-config",
       component: () =>
