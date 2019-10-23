@@ -40,7 +40,6 @@ We bind a state item and a mutation to a component
  <template> 
  
   <example-component-with-event-handler
-    id="bind-state-message-with-mutation-example"
     asr-bind-state="message"
     asr-bind-mutations="setMessage"
   />. 
@@ -62,7 +61,7 @@ The component now has state item 'message' and method 'setMessage' available:
   </div>
 </template>
 ```
-Notice we bind the message to the value of the input and at an event-handler that get's triggered at keyup.
+Notice we bind the message to the value of the input and an event-handler that get's triggered at keyup.
 
 And voila we have a nice two way binding at our hands.
 
@@ -93,7 +92,7 @@ export default new Vuex.Store({
 
 ```
 
-now we could bind the component like this:
+now we could bind the component like this with our `alias syntax`:
 
 ```vue{7,8}
 
@@ -113,7 +112,7 @@ now we could bind the component like this:
 
 ## namespacing
 
-As namespacing is a generic feature of vuex-asr could work like this:
+As [namespacing](./namespacing.html) is a generic feature of vuex-asr could work like this:
 
 ```vue{6,7}
  // src/App.vue
@@ -130,4 +129,10 @@ As namespacing is a generic feature of vuex-asr could work like this:
   ...
 ```
 
-And when we need multiple mutations to happen or do asynchronous actions, we use actions, read all about it in the next chapter.
+::: tip
+read more about [namespacing](./namespacing.html)
+::: 
+
+### next step
+
+When we need multiple mutations to happen or do asynchronous actions, we use actions, read all about it in the next chapter.
