@@ -10,7 +10,7 @@ For a quick overview go to the sandbox environment to follow along:
 
 ## message board
 
-As I like to keep the examples as simple as possible let's reuse the previous example but now let's delegate multiple message objects into one component the MessageBoard 🤘
+As I like to keep the examples as simple as possible let's reuse the previous example but now let's delegate multiple message objects into one component the MessageBoard
 
 First let's make a message board:
 ```vue
@@ -95,4 +95,4 @@ These live in the PHOTOS namespace:
 - recentPhotos
 - likedPhotos
 
-Well isn't that convenient? There is even another slick way to achieve the same functionality and even more with the asr-bind-state-config property coming up next 💪
+Well isn't that convenient? There is even another slick way to achieve the same functionality and even more with the asr-bind-config property coming up next 💪
