@@ -138,6 +138,7 @@ As [namespacing](./namespacing.html) is a generic feature of vuex-asr could work
   
   ...
 ```
+## next steps
 
 In the next chapter we go deeper into [namespacing](./namespacing.html) and how it could help us to organise our front-
 end codebase. 
