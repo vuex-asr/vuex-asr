@@ -1,6 +1,6 @@
 # hello world example with a getter
 
-In the [previous example (codesandbox)](./hello-world-example.html) you saw how we could bind a state variable directly to a component. We could do the same thing with a getter.
+In the [previous example](./hello-world-example.html) you saw how we could bind a state variable directly to a component. We could do the same thing with a getter.
 
 ## getters
 
