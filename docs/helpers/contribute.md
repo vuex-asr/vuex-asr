@@ -28,7 +28,7 @@ FEEDBACK: what is the best place to discuss feature requests?
 Use the sandboxes to create examples and share your implementations and experiences anywhere you like. Sharing examples will help to create a better understanding of the software.
 
 ::: warning
-IDEA: add a page to the manual with links to sandbox showcases. 
+IDEA: add a page to the manual with links to sandbox showcases?
 :::
 
 ## Todo before release 0.7RC
