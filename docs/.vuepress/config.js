@@ -1,4 +1,5 @@
 module.exports = {
+    base: '/vuex-asr/',
     head: [
         ['link', { rel: 'icon', href: '../vue-logo.png' }]
     ],
