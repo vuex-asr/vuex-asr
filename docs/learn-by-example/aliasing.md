@@ -4,7 +4,10 @@ It's time to see how we can make a component reusable by making use of the alias
 
 For a quick overview go to the sandbox environment to follow along:
 
+::: tip
+For a quick overview go to the sandbox environment to follow along:
 [aliasing example (codesandbox)](https://codesandbox.io/s/manual-hello-world-example-3tx2w)
+:::
 
 ## alias convention for all binders
 

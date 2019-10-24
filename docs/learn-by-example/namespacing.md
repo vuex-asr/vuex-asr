@@ -1,20 +1,11 @@
 # namespacing
 
-In the [hello world example](./hello-world-example.html) we saw that we can bind a variable from the store to the component with `asr-bind-state`. In the [hello world of 2 way binding example](./hello-world-of-2-way-binding.html) we saw we can bind a model that can mutate a store object And we also learned we could make use of the [alias](./aliasing.html) function to make components reusable.
-
 Since vuex-asr is intended to make building large scale applications more easy let's see what namespacing could bring to the table.
 
+::: tip
 For a quick overview go to the sandbox environment to follow along:
-
-[namespacing example (codesandbox)](https://codesandbox.io/s/manual-namespacing-6gpkj)
-
-## code organisation
-
-There are as many reasons as much as there are ways to organise your code. A great help in organising code is by using namespaces to address the different aspects of your application.
-
-## vuex namespacing
-
-Since VUEX offers you an out-of-the box solution to organise your store, vuex-asr follows those conventions and enables you to namespace your store objects as well.
+[namespacing example (codesandbox)](https://codesandbox.io/s/manual-namespacing-q71oe)
+:::
 
 ## namespace convention for all binders
 
@@ -24,6 +15,15 @@ The examples in this chapter illustrate how you could implement namespacing with
 - asr-bind-mutations
 - asr-bind-actions
 - asr-bind-config
+
+## code organisation
+
+There are as many reasons as much as there are ways to organise your code. A great help in organising code is by using namespaces to address the different aspects of your application.
+
+## vuex namespacing
+
+Since VUEX offers you an out-of-the box solution to organise your store, vuex-asr follows those conventions and enables you to namespace your store objects as well.
+
 
 ## example
 
