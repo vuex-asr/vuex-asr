@@ -6,7 +6,7 @@ Vuex-asr removes the necessity to describe your vuex store bindings in the compo
 
 You can find the repository here: [https://github.com/vuex-asr/vuex-asr](https://github.com/vuex-asr/vuex-asr)
 
-* Version: 0.9 Beta RC
+* Version: 0.7 Beta RC
 * License M.I.T.
 * author: Joris Wenting
 * email: vuex.asr@gmail.com

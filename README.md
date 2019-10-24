@@ -7,7 +7,7 @@ Vuex ASR leverages the ability to bind store items to a component by attribute. 
 You can find documentation here:
 < link to documentation url >
 
-* Version: 0.9 Beta RC
+* Version: 0.7 Beta RC
 * License M.I.T.
 * author: Joris Wenting
 * email: vuex.asr@gmail.com
