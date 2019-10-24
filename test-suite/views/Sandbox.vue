@@ -1,8 +1,10 @@
 <template>
-  <div id="sandbox">
+  <div id="asr-pass-overview">
     <some-component
-      asr-bind-state="anotherMessage AS message IS v-model,
-    			USER|firstname, lastname"
+      asr-bind-state="
+                anotherMessage AS message IS v-model,
+    			USER|first AS firstName,
+    			USER|last AS lastName"
       asr-debug
     />
   </div>

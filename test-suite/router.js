@@ -56,6 +56,14 @@ export default new Router({
         import(
           /* webpackChunkName: "about" */ "./views/AsrBindConfigOverview.vue"
         )
+    },
+    {
+      path: "/sandbox",
+      name: "sandbox",
+      component: () =>
+          import(
+              /* webpackChunkName: "about" */ "./views/Sandbox.vue"
+              )
     }
   ]
 });

@@ -9,12 +9,10 @@ const ModuleUser = {
   state: {
     message: "This is a message in the USER module",
     anotherMessage: "This is another message in the USER module",
-    user: {
-      first: "Joris",
-      last: "Wenting",
-      gender: "male",
-      isActive: true
-    },
+    first: "Joris",
+    last: "Wenting",
+    gender: "male",
+    isActive: true,
     users: []
   },
   getters: {

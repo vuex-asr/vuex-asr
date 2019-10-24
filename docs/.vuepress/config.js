@@ -51,8 +51,9 @@ module.exports = {
                 displayAllHeaders: true, // Default: false
                 sidebarDepth: 1,    // optional, defaults to 1
                 children: [
-                    '/helpers/cheat-sheet.html',
+                    '/helpers/asr-debug.html',
                     '/helpers/working-with-the-test-suite.html',
+                    '/helpers/cheat-sheet.html',
                 ]
             },
             // {
