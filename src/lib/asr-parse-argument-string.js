@@ -79,8 +79,6 @@ export default class ParseArgumentString {
 
     storeLocationObject = this.parseAlias(storeLocationObject);
 
-    console.log("storeLocationObject", storeLocationObject);
-
     return storeLocationObject;
   }
 
