@@ -1,19 +1,18 @@
 <template>
-  <div id="sandbox">
-    <some-component
-      asr-bind-state="anotherMessage AS message IS v-model,
-    			USER|firstname, lastname"
+  <div id="asr-pass-overview">
+    <pass-example-component
+      asr-bind-state="message IS v-model"
       asr-debug
-    />
+    ></pass-example-component>
   </div>
 </template>
 
 <script>
-import SomeComponent from "../components/SomeComponent";
+import PassExampleComponent from "../components/PassExampleComponent";
 
 export default {
   components: {
-    SomeComponent
+    PassExampleComponent
   }
 };
 </script>
