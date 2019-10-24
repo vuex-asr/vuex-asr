@@ -2,6 +2,11 @@
 
 Vuex offers a great way to mutate state items with the use of mutations and actions. Vuex-asr enables you to bind those actions and mutations the same way you could bind [state](./hello-world-example.html) and [getters](getters-example.html) by the component's attributes. In this chapter we discuss the use of mutations.
 
+::: tip
+For a quick overview go to the sandbox environment to follow along:
+[mutations (codesandbox)](https://codesandbox.io/s/manual-mutations-6q5d6)
+:::
+
 ## vuex mutations in a nutshell
 
 Mutations are methods used in the store to change/mutate the state and keep track of those changes/mutations. Read more about mutations in the [vuex guide/mutations](https://vuex.vuejs.org/guide/mutations.html).
@@ -25,7 +30,7 @@ export default new Vuex.Store({
     setMessage(state, message) {
       console.log("message was mutated with: ", message);
       state.message = message;
-    }
+  }
   }
 });
 ```

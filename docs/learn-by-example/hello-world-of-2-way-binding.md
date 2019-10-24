@@ -2,9 +2,10 @@
 
 In the [hello world example](./hello-world-example.html) and [getters example](./getters-example.html) we saw that we can bind a variable or a getter from the store to the component with `asr-bind-state` and `asr-bind-getters`. Now let's see if we can update the variable in one component and have it being updated in the other. For this we'll extend our hello world example.
 
+::: tip
 For a quick overview go to the sandbox environment to follow along:
-
-[hello world of 2 way binding example (codesandbox)](https://codesandbox.io/s/manual-hello-world-of-2-way-binding-lcjpx)
+[hello world of 2 way binding example (codesandbox)](https://codesandbox.io/s/manual-getters-example-kfww7)
+:::
 
 ## binding a model
 

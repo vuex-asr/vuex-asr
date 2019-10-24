@@ -2,9 +2,10 @@
 
 In the example below you find an example of the most basic implementation of vuex-asr.
 
+::: tip
 For a quick overview go to the sandbox environment to follow along:
-
 [hello world example (codesandbox)](https://codesandbox.io/s/manual-hello-world-example-3tx2w)
+:::
 
 ## the store
 
