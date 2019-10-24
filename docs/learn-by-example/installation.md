@@ -4,7 +4,7 @@ vuex-asr is not difficult to install and implement, below a guide for manual ins
 
 For convenience all the sandboxes used in this section have a simple but extendable setup, you could fork them and start fiddling around or base a new project on it.
 
-## Manual installation
+## manual installation
 
 To install the plugin just run:
 
