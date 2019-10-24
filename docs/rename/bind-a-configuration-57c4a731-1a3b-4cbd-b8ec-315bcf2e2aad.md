@@ -101,7 +101,7 @@ now let's see if we can bind the config in our App.vue file:
     
     <template>
       <div id="app">
-        <message-board asr-bind-state-config="GENERAL|messageConfig"></message-board>
+        <message-board asr-bind-state-config="GENERAL/messageConfig"></message-board>
       </div>
     </template>
     

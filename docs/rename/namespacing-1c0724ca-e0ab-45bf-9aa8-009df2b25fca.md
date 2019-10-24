@@ -61,18 +61,18 @@ As you can see nothing complicated going on here, we just have another string as
       <div id="app">
         <example-message asr-bind-state="message"/>
     	  <example-message asr-bind-state="anotherMessage AS message"/>
-    	  <example-message asr-bind-state="USER|message"/>
+    	  <example-message asr-bind-state="USER/message"/>
     
         <text-input asr-bind-state="message IS v-model"/>
         <text-input asr-bind-state="anotherMessage AS message IS v-model"/>
-        <text-input asr-bind-state="USER|message IS v-model"/>
+        <text-input asr-bind-state="USER/message IS v-model"/>
       </div>
     </template>
     
     ...
 
-Notice the namespace-pipe-variable syntax: `USER|message`
+Notice the namespace-slash-variable syntax: `USER/message`
 
 This is all you need to do to tell VUEXasr to pick the message object from the user-module.
 
-In the next chapter you can see why we choose the `|` character as this comes in handy in assigning multiple opjects to the asr-bind-state property, for even more power ⚡️.
+In the next chapter you can see how you can assigning multiple store objects to a component ⚡️.

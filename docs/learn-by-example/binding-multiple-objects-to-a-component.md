@@ -43,11 +43,11 @@ Now let's see how we could bind objects to these variables:
     	      asr-bind-state="
     	                message, 
     	                anotherMessage, 
-    	                USER|message AS messageUser"
+    	                USER/message AS messageUser"
     	  ></message-board>
         <text-input asr-bind-state="message IS v-model"/>
         <text-input asr-bind-state="anotherMessage IS v-model"/>
-        <text-input asr-bind-state="USER|message AS messageUser IS v-model"/>
+        <text-input asr-bind-state="USER/message AS messageUser IS v-model"/>
       </div>
     </template>
     
@@ -76,8 +76,8 @@ All variables declared after a pipe must be in the same namespace (module), up u
       asr-bind-state="
                 message, 
                 anotherMessage, 
-                USER|messageUser AS message, userObject,
-                PHOTOS|recentPhotos, likedPhotos"
+                USER/messageUser AS message, userObject,
+                PHOTOS/recentPhotos, likedPhotos"
     ></some-component>
 ```
 In the example above these variables live in the global (root) namespace:

@@ -81,17 +81,17 @@ The capitalization of the namespaces (e.g. USER) is just a preference.
       <div id="app">
         <example-message asr-bind-state="message"/>
     	<example-message asr-bind-state="anotherMessage AS message"/>
-    	<example-message asr-bind-state="USER|message"/>
+    	<example-message asr-bind-state="USER/message"/>
     
         <text-input asr-bind-state="message IS v-model"/>
         <text-input asr-bind-state="anotherMessage AS message IS v-model"/>
-        <text-input asr-bind-state="USER|message IS v-model"/>
+        <text-input asr-bind-state="USER/message IS v-model"/>
       </div>
     </template>
     
     ...
 ```
-Notice the pipe `|` character in the syntax: `USER|message` separating `USER` as namespace and `message` as the variable name.
+Notice the pipe `/` character in the syntax: `USER/message` separating `USER` as namespace and `message` as the variable name.
 
 ## deeper namespaces
 
@@ -103,7 +103,7 @@ For example binding a message from the USER/SETTINGS namespace:
     
     <template>
       <div id="app">
-        <text-input asr-bind-state="USER/SETTINGS|message IS v-model"/>
+        <text-input asr-bind-state="USER/SETTINGS/message IS v-model"/>
       </div>
     </template>
     

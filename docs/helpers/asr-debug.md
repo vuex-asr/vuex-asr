@@ -9,8 +9,8 @@ The following code will create a report for the component `<some-component />` i
     <some-component
       asr-bind-state="
                 anotherMessage AS message IS v-model,
-    			USER|first AS firstName,
-    			USER|last AS lastName"
+    			USER/first AS firstName,
+    			USER/last AS lastName"
       asr-debug
     />
 ```

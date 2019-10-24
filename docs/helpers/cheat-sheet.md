@@ -16,18 +16,18 @@
     <example-component asr-bind-state="anotherMessage AS message"/>
     
     // Bind items from within a store namespace
-    <example-component asr-bind-state="PHOTOS|recentlyPosted"/>
+    <example-component asr-bind-state="PHOTOS/recentlyPosted"/>
     
     // Bind multiple items from different namespaces
     <example-component 
-      asr-bind-state="PHOTOS|recentlyPosted,
-    			USER|firstname, lastname"
+      asr-bind-state="PHOTOS/recentlyPosted,
+    			USER/firstname, lastname"
     />
     
     // And mix and match
     <example-component 
       asr-bind-state="anotherMessage AS message IS v-model,
-    			PHOTOS|recentlyPosted AS photos,
-    			USER|firstname, lastname"
+    			PHOTOS/recentlyPosted AS photos,
+    			USER/firstname, lastname"
     />
 ```

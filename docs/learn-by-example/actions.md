@@ -131,8 +131,8 @@ As [namespacing](./namespacing.html) is a generic feature of vuex-asr could work
  <template> 
  
   <example-component-with-event-handler
-    asr-bind-state="GENERAL|anotherMessage AS message"
-    asr-bind-actions="GENERAL|setAnotherMessageAsync AS setMessage"
+    asr-bind-state="GENERAL/anotherMessage AS message"
+    asr-bind-actions="GENERAL/setAnotherMessageAsync AS setMessage"
   />
 
   </template>

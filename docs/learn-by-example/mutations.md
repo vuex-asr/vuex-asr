@@ -119,8 +119,8 @@ Namespacing is discussed in more detail [here](./namespacing.html), but for conv
  <template> 
  
   <example-component-with-event-handler
-    asr-bind-state="GENERAL|anotherMessage AS message"
-    asr-bind-mutations="GENERAL|setAnotherMessage AS setMessage"
+    asr-bind-state="GENERAL/anotherMessage AS message"
+    asr-bind-mutations="GENERAL/setAnotherMessage AS setMessage"
   />. 
 
   </template>
