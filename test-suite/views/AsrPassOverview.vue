@@ -1,5 +1,5 @@
 <template>
-  <div class="asr-bind-actions-overview">
+  <div id="asr-pass-overview">
     <pass-example-component
       asr-bind-state="message IS v-model"
       asr-debug
