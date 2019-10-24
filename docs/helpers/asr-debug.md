@@ -21,4 +21,4 @@ Asr-debug works best with chrome. It's also recommended to download the [vue.js 
 
 This example results in this console message:
 
-![An image](/asr-debug-screenshot.png)
+![An image](/vuex-asr/asr-debug-screenshot.png)
