@@ -54,7 +54,7 @@ In the App.vue component we use vuex-asr to bind the `messageCapitalized` value 
 ```
 Notice the `asr-bind-getters` property in the `<example-message>` component. This binds the `messageCapitalized` getter from the store to the component. If the store updates the state variable `message` the value of the getter `messageCapitalized` will be updated too.
 
-But since the `example component` uses the variable name `message` we have to alias `messageCapitalized.
+But since the `example component` uses the variable name `message` we have to alias `messageCapitalized`.
 
 ## aliasing
 
