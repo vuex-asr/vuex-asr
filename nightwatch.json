@@ -12,7 +12,6 @@
 
   "test_settings" : {
     "default" : {
-      "launch_url" : "http://192.168.2.21:8080",
       "selenium_port"  : 4444,
       "selenium_host"  : "localhost",
       "desiredCapabilities": {
