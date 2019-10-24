@@ -14,7 +14,7 @@ You can find the repository here: [https://github.com/vuex-asr/vuex-asr](https:/
 
 ### How do I get set up?
 
-Follow this manuals [learn by example](./learn-by-example.html), the hello world example <link> contains full setup and also a link to a code-sandbox to fiddle around.
+Follow this manuals [learn by example](./learn-by-example/hello-world-example.html), the hello world example <link> contains full setup and also a link to a code-sandbox to fiddle around.
 
 ### Contribution guidelines
 
