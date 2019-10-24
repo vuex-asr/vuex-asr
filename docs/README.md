@@ -1,4 +1,4 @@
-# Documentation for Vuex-ASR, Automated Store Resolution for Vue
+# Vuex-ASR Documentation, Automated Store Resolution for Vue
 
 #### Quick summary
 
