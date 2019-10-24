@@ -2,9 +2,11 @@
 
 Since vuex-asr is intended to make building large scale applications more easy let's see how we could bind multiple objects to a component with the use of a configuration.
 
+::: tip
 For a quick overview go to the sandbox environment to follow along:
+[binding a configuration](https://codesandbox.io/s/manual-binding-a-configuration-q2t7w)
+:::
 
-[binding a configuration example](https://codesandbox.io/s/manual-bind-a-configuration-mtk1n)
 
 ## asr-bind-config
 
