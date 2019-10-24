@@ -13,18 +13,6 @@ module.exports = {
             {text: 'Github', link: 'https://github.com'}
         ],
         sidebar: [
-            // {
-            //     title: 'Quick overview',   // required
-            //     collapsable: false, // optional, defaults to true
-            //     displayAllHeaders: true, // Default: false
-            //     sidebarDepth: 1,    // optional, defaults to 1
-            //     children: [
-            //         '/learn-by-example/installation.html',
-            //         '/quick-overview/binders.html',
-            //         '/quick-overview/config.html',
-            //
-            //     ]
-            // },
             {
                 title: 'Learn by example',   // required
                 collapsable: false, // optional, defaults to true
@@ -56,15 +44,6 @@ module.exports = {
                     '/helpers/cheat-sheet.html',
                 ]
             },
-            // {
-            //     title: 'More advanced subjects',   // required
-            //     collapsable: false, // optional, defaults to true
-            //     displayAllHeaders: true, // Default: false
-            //     sidebarDepth: 1,    // optional, defaults to 1
-            //     children: [
-            //         '/more-advanced-subjects/introduction.html',
-            //     ]
-            // },
         ],
     },
 }
