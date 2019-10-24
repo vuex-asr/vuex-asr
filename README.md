@@ -10,6 +10,7 @@ You can find documentation here:
 * Version: 0.9 Beta RC
 * License M.I.T.
 * author: Joris Wenting
+* email: vuex.asr@gmail.com
 
 ### How do I get set up? ###
 
