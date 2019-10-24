@@ -38,7 +38,5 @@ This also means that at the moment I cannot promise other than that I will do my
 ### Who do I talk to? ###
 
 * Joris Wenting
-
-* Link to twitter
-
-* Link to linkedin
+* vuex.asr@gmail.com
+* or message and connect on [linkedIn](https://www.linkedin.com/in/joriswenting/).
