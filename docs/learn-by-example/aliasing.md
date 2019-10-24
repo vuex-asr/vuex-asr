@@ -1,12 +1,20 @@
 # aliasing
 
-In the previous examples we already discussed aliasing, in this chapter we 
-
-Now it's time to see how we can make a component reusable by making use of the aliasing functionality of vuex-asr.
+It's time to see how we can make a component reusable by making use of the aliasing functionality of vuex-asr.
 
 For a quick overview go to the sandbox environment to follow along:
 
 [aliasing example (codesandbox)](https://codesandbox.io/s/manual-hello-world-example-3tx2w)
+
+## alias convention for all binders
+
+The examples in this chapter illustrate how you could implement aliasing with `asr-bind-state`, but the convention is the same for all of the binders:
+- asr-bind-state
+- asr-bind-getters
+- asr-bind-mutations
+- asr-bind-actions
+- asr-bind-config
+- asr-pass (you could also alias a pass variable!)
 
 ## reusability
 
