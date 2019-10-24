@@ -66,18 +66,19 @@ Now let's see how we could bind objects to these variables:
 ```
 Notice, the comma separated notation which is split into multiple lines for convenience and readability.
 
-## namespacing pipe convention
+## namespacing syntax convention
 
 There is an important convention for the namespace pipe syntax and it is as follows:
 
-All variables declared after a pipe must be in the same namespace (module), up until a new namespace is declared. Before a namespace has been declared VUEXasr assumes the variables live in the global (root) namespace, so therefor these MUST be declared first. 
 ```vue 
     <some-component
       asr-bind-state="
                 message, 
                 anotherMessage, 
-                USER/messageUser AS message, userObject,
-                PHOTOS/recentPhotos, likedPhotos"
+                USER/messageUser,
+                USER/userObject AS user,
+                PHOTOS/recentPhotos
+                PHOTOS/likedPhotos"
     ></some-component>
 ```
 In the example above these variables live in the global (root) namespace:
@@ -87,8 +88,8 @@ In the example above these variables live in the global (root) namespace:
 
 These live in the USER namespace:
 
-- messageUser (aliassed to 'message')
-- userObject
+- messageUser
+- userObject (aliassed to 'user')
 
 These live in the PHOTOS namespace:
 
