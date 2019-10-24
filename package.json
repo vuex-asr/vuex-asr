@@ -1,11 +1,11 @@
 {
   "name": "vuex-asr",
-  "version": "0.6.9",
+  "version": "0.6.91",
   "author": "Joris Wenting",
   "homepage": "https://github.com/vuex-asr/",
   "license": "MIT",
-  "main": "src_plugin/vuex-asr.js",
-  "module": "src_plugin/vuex-asr.js",
+  "main": "src/vuex-asr.js",
+  "module": "src/vuex-asr.js",
   "bugs": {
     "url" : "https://github.com/vuex-asr/vuex-asr/issues",
     "email" : "vuex.asr@gmail.com"

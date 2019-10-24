@@ -4,8 +4,7 @@
 
 Vuex-asr removes the necessity to describe your vuex store bindings in the component's script (state, getters, mutations, actions). The plugin automatically resolves  bindings and is able to map them from the component's attributes, allowing your component's code to become **generic** and **independent** from the Vuex store :sunglasses:.
 
-You can find the repository here:
-< link to vuex-asr repository >
+You can find the repository here: [https://github.com/vuex-asr/vuex-asr](https://github.com/vuex-asr/vuex-asr)
 
 * Version: 0.9 Beta RC
 * License M.I.T.

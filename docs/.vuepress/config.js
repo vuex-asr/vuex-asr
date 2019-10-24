@@ -11,7 +11,7 @@ module.exports = {
             {text: 'Guide', link: '/learn-by-example/hello-world-example.html'},
             {text: 'Cheatsheet', link: '/helpers/cheat-sheet.html'},
             {text: 'Contribute', link: '/helpers/contribute.html'},
-            {text: 'Github', link: 'https://github.com'}
+            {text: 'Github', link: 'https://github.com/vuex-asr/vuex-asr'}
         ],
         sidebar: [
             {
