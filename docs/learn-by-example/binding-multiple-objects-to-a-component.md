@@ -4,9 +4,19 @@ In the [hello world example](./hello-world-example.html) we saw that we can bind
 
 Since VUEXasr is intended to make building large scale applications more easy let's see how we could bind multiple objects to a component.
 
+::: tip
 For a quick overview go to the sandbox environment to follow along:
+[binding multiple objects in a component example](https://codesandbox.io/s/manual-binding-multiple-objects-to-a-component-gulsx)
+:::
 
-[binding multiple objects in a component example](https://codesandbox.io/s/manual-binding-multiple-objects-to-a-component-1pitc)
+## binding multiple items convention for all binders
+
+The examples in this chapter illustrate how you could implement binding multiple store items with `asr-bind-state`, but the convention is the same for all of the binders:
+- asr-bind-state
+- asr-bind-getters
+- asr-bind-mutations
+- asr-bind-actions
+- asr-bind-config
 
 ## message board
 
@@ -18,11 +28,11 @@ First let's make a message board:
     
     <template>
     <div>
-      <h1>A message from the root of the store</h1>
+      <p>A message from the root of the store</p>
       <p>{{ message }}</p>
-      <h1>Another message from the root of the store</h1>
+      <p>Another message from the root of the store</p>
       <p>{{ anotherMessage }}</p>
-      <h1>A message from the User Module</h1>
+      <p>A message from the User Module</p>
       <p>{{ messageUser }}</p>
     </div>
     </template>
@@ -68,7 +78,7 @@ Notice, the comma separated notation which is split into multiple lines for conv
 
 ## namespacing syntax convention
 
-There is an important convention for the namespace pipe syntax and it is as follows:
+You could organise your bindings by separating them by a comma `,`
 
 ```vue 
     <some-component
@@ -89,7 +99,7 @@ In the example above these variables live in the global (root) namespace:
 These live in the USER namespace:
 
 - messageUser
-- userObject (aliassed to 'user')
+- userObject (aliased to 'user')
 
 These live in the PHOTOS namespace:
 
