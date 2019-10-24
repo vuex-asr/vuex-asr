@@ -66,10 +66,10 @@ export default class ParseArgumentString {
   parseItemString(inputStringItem) {
     let storeLocationObject = {};
 
-    if (inputStringItem.includes("|")) {
-      const argumentArray = inputStringItem.split("|");
-      storeLocationObject.namespace = argumentArray[0];
-      storeLocationObject.bind = argumentArray[1];
+    if (inputStringItem.includes("/")) {
+      const lastIndexSlash = inputStringItem.lastIndexOf("/");
+      storeLocationObject.namespace = inputStringItem.substr(0, lastIndexSlash);
+      storeLocationObject.bind = inputStringItem.substr(lastIndexSlash + 1);
     } else {
       storeLocationObject.namespace = false;
       storeLocationObject.bind = inputStringItem;
@@ -78,6 +78,8 @@ export default class ParseArgumentString {
     storeLocationObject = this.parseModel(storeLocationObject);
 
     storeLocationObject = this.parseAlias(storeLocationObject);
+
+    console.log("storeLocationObject", storeLocationObject);
 
     return storeLocationObject;
   }

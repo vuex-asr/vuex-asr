@@ -12,12 +12,12 @@
 
     <example-component
       id="bind-state-namespace-example"
-      asr-bind-state="USER|message"
+      asr-bind-state="USER/message"
     />
 
     <example-component
       id="bind-state-namespace-alias-example"
-      asr-bind-state="USER|anotherMessage AS message"
+      asr-bind-state="USER/anotherMessage AS message"
     />
 
     <example-component-with-input

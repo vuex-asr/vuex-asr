@@ -8,13 +8,13 @@
 
     <example-component
       id="just-for-reference"
-      asr-bind-getters="USER/SETTINGS|anotherMessageReversed AS message"
+      asr-bind-getters="USER/SETTINGS/anotherMessageReversed AS message"
     />
 
     <example-component-with-getter-and-setter
       id="bind-state-message-with-mutation-deep-namespaced-aliased-example"
-      asr-bind-state="USER/SETTINGS|anotherMessage AS message"
-      asr-bind-mutations="USER/SETTINGS|setAnotherMessage AS setMessage"
+      asr-bind-state="USER/SETTINGS/anotherMessage AS message"
+      asr-bind-mutations="USER/SETTINGS/setAnotherMessage AS setMessage"
     />
   </div>
 </template>

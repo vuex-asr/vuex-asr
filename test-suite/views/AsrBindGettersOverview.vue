@@ -8,13 +8,13 @@
 
     <example-component
       id="bind-getters-namespaced-example"
-      asr-bind-getters="USER|messageKebabCase AS message"
+      asr-bind-getters="USER/messageKebabCase AS message"
       asr-debug
     />
 
     <example-component
       id="bind-getters-deep-namespaced-example"
-      asr-bind-getters="USER/SETTINGS|messageReversed AS message"
+      asr-bind-getters="USER/SETTINGS/messageReversed AS message"
       asr-debug
     />
   </div>
