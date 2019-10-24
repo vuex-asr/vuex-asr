@@ -17,26 +17,32 @@ TODO: insert template for reporting a bug
 
 ## Contribute with development
 
-If you like to help build this project to the next-level, the project could really use help on keeping it up to date with upcoming versions of vue and vuex and is open for new feature suggestions and PR's, try to 
+If you like to help build this project to the next-level, the project could really use help on keeping it up to date with upcoming versions of vue and vuex and is open for new feature suggestions and PR's.
+
+::: warning
+FEEDBACK: what is the best place to discuss feature requests?
+::: 
 
 ## Contribute by example
 
 Use the sandboxes to create examples and share your implementations and experiences anywhere you like. Sharing examples will help to create a better understanding of the software.
 
 ::: warning
-where to discuss ideas?
+IDEA: add a page to the manual with links to sandbox showcases. 
 :::
 
 ## Todo before release 0.7RC
 
- :black_square_button: Organise releases of plugin (release branche, publisch package from release branch)  
- :black_square_button: TodoMVC example (with Victor, after pre-release and packaging)
-
-
+ :black_square_button: Migrate repo to vuex-asr github  
+ :black_square_button: deploy docs
+ :black_square_button: create release branche
+ :black_square_button: publish package to NPM
+ :black_square_button: create code-examples in [scrimba](https://scrimba.com)
+ 
 ## Whishlist / Roadmap
 
 - Improve testing
 - Add list with code-examples
-- TodoMVC example (met Victor doen, na pre-release en packaging)
+- TodoMVC example
 - Free repository with generic components capable of being integrated in a vuex-asr stateful project.
 - Make ready for Vue 3.x
