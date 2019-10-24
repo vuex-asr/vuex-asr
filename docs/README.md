@@ -10,19 +10,19 @@ You can find the repository here:
 * Version: 0.9 Beta RC
 * License M.I.T.
 * author: Joris Wenting
+* email: vuex.asr@gmail.com
 
-### How do I get set up? ###
+
+### How do I get set up?
 
 Follow this manuals [learn by example](./learn-by-example.html), the hello world example <link> contains full setup and also a link to a code-sandbox to fiddle around.
 
-### Contribution guidelines ###
+### Contribution guidelines
 
 Visit the [contribute](./helpers/contribute.html) page.
 
-### Who do I talk to? ###
+### Who do I talk to?
 
 * Joris Wenting
-
-* Link to twitter
-
-* Link to linkedin
+* vuex.asr@gmail.com
+* or message and connect on [linkedIn](https://www.linkedin.com/in/joriswenting/).
