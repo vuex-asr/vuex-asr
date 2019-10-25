@@ -25,9 +25,7 @@ The plugin automatically resolves  bindings and is able to map them from the com
 
 vuex-asr provides full interactivity with vuex.
 
-::: tip
 Follow the [step by step manual](https://vuex-asr.github.io/vuex-asr/vuex-asr/learn-by-example/hello-world-example.html) to get started.
-:::
 
 ## tl;dr
 
