@@ -7,6 +7,10 @@ For a quick overview go to the sandbox environment to follow along:
 [hello world of 2 way binding example (codesandbox)](https://codesandbox.io/s/manual-getters-example-kfww7)
 :::
 
+::: warning
+Binding a state item and being able to mutate it is called **2 way model binding**. In this example we are going to bind an item from the state directly as a model. This is quite useful in the rapid-prototyping phase of the project, but *NOT RECOMMENDED* in production. For production it is recommended to use vuex mutations for synchronous- and actions for asynchronous manipulation of state items. Read more in [advanced 2 way binding](./advanced-2-way-binding.html)
+:::
+
 ## binding a model
 
 To make the store variable `message` (as we used in our previous example) 2-way-bound, we need to tell the component that the variable is a model. (Meaning it implements both a getter and a setter).
@@ -77,10 +81,6 @@ For more on this see [Vue documentation on v-model](https://vuejs.org/v2/guide/f
 ::: 
 
 If you now change the contents of the message in the input field that is rendered you'll see that also the message in the `example-message` component is updated.
-
-::: warning
-Binding a state item and being able to mutate it is called **2 way model binding**. In this example we are going to bind an item from the state directly as a model. This is quite useful in the rapid-prototyping phase of the project, but *NOT RECOMMENDED* in production. For production it is recommended to use vuex mutations for synchronous- and actions for asynchronous manipulation of state items. Read more in [advanced 2 way binding](./advanced-2-way-binding.html)
-:::
 
 ## next steps
 
