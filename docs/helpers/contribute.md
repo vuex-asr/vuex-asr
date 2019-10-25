@@ -11,7 +11,7 @@ This open source project is a work in progress and more than open for feedback, 
 You could help by reporting a bug recreated in a sandbox from this template. Just create an issue in the repo and add a link to the sandbox for replication.
 
 ::: tip bug report template
-[fork this template](https://codesandbox.io/s/bug-report-template)
+[fork this template](https://codesandbox.io/s/bug-report-template-ulfbr)
 ::: 
 
 
