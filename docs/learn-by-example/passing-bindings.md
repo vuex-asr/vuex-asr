@@ -29,7 +29,7 @@ So let's say we bind a model in our App file to a component `<pass-example-compo
     
     ...
 ```
-And pass it inside `<pass-example-component>` to `<example-pass-child>`:
+And pass it inside `<pass-example-component>` to `<text-input>`:
 ```vue{8}
     // src/components/ExampleMessage.vue
     
