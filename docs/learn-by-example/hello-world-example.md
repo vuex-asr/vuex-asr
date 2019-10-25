@@ -32,17 +32,13 @@ As you can see, we've created a variable `message` in the state section of the s
 
 In the main.js file we implement the store we've created in `src/vuex/store.js` and `use` our plugin.
 
-::: warning
-DEV: update import statement when sandbox is online
-::: 
-
 ```js{5,6,8,12}
     // src/main.js
     
     import Vue from "vue";
     import App from "./App.vue";
     import { Store } from "./vuex/store";
-    import VuexASR from "./plugins/vuex-asr/vuex-asr";
+    import VuexASR from "vuex-asr";
     
     Vue.use(VuexASR);
     
