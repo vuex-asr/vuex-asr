@@ -3,7 +3,7 @@
 Vuex ASR leverages the ability to bind store items to a component by attribute. It also enables you to map the store items to the nameconvention you use in your components, This means that your components code becomes independent from the store.
 
 You can find documentation here:
-< link to documentation url >
+https://vuex-asr.github.io/vuex-asr/
 
 * Version: 0.7 Beta RC
 * License M.I.T.
