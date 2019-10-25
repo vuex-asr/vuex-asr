@@ -52,10 +52,8 @@ Which will bind the the state item `notifyMessage`, living in the namespace `Use
 </template>
     >
 ```
-
-::: tip
 about reactivity: If `User/Settings/notifyMessage` updates in the store, the `message` in `<message-component>` will update too.
-:::
+
 
 ### a more complex implementation
 
