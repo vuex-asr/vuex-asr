@@ -12,7 +12,13 @@ https://vuex-asr.github.io/vuex-asr/
 
 ### How do I get set up? ###
 
-Follow the manual, the hello world example <link> contains full setup and also a link to a code-sandbox to fiddle around without having to setup.
+You can install the package via NPM:
+
+```bash
+npm install vuex-asr
+```
+
+Follow the manual, the [hello world example](https://vuex-asr.github.io/vuex-asr/learn-by-example/hello-world-example.html) to get started, it contains full setup and also a link to a code-sandbox to fiddle around without having to setup.
 
 ### Contribution guidelines ###
 
