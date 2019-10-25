@@ -84,4 +84,4 @@ If you now change the contents of the message in the input field that is rendere
 
 ## next steps
 
-So now you now how to bind a state object as a simple model, let's take a look at how we could bind actions and mutations to take full advantage of vuex state-management. 
+So now you know how to bind a state object as a simple model, let's take a look at how we could bind actions and mutations to take full advantage of vuex state-management. 
