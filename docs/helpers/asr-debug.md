@@ -15,7 +15,7 @@ The following code will create a report for the component `<some-component />` i
     />
 ```
 
-::: tip
+::: tip chrome and devtools
 Asr-debug works best with chrome. It's also recommended to download the [vue.js devtools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd).
 :::
 

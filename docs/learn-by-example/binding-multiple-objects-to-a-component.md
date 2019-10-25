@@ -4,8 +4,7 @@ In the [hello world example](./hello-world-example.html) we saw that we can bind
 
 Since VUEXasr is intended to make building large scale applications more easy let's see how we could bind multiple objects to a component.
 
-::: tip
-For a quick overview go to the sandbox environment to follow along:
+::: tip codesandbox
 [binding multiple objects in a component example](https://codesandbox.io/s/manual-binding-multiple-objects-to-a-component-gulsx)
 :::
 

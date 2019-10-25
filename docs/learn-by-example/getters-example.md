@@ -2,9 +2,8 @@
 
 In the [previous example](./hello-world-example.html) you saw how we could bind a state variable directly to a component. We could do the same thing with a getter.
 
-::: tip
-For a quick overview go to the sandbox environment to follow along:
-[hello world example with getters (codesandbox)](https://codesandbox.io/s/manual-getters-example-5807o)
+::: tip codesandbox
+[hello world example with getters](https://codesandbox.io/s/manual-getters-example-5807o)
 :::
 
 ## getters

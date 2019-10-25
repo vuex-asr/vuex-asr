@@ -1,6 +1,6 @@
 # Vuex-ASR - Automated Store Resolution for Vue | Documentation
 
-* Version: 0.7 Beta RC
+* Version: 0.7.2
 * License M.I.T.
 * [Github Repository](https://github.com/vuex-asr/vuex-asr)
 * author: Joris Wenting
@@ -25,8 +25,8 @@ The plugin automatically resolves  bindings and is able to map them from the com
 
 vuex-asr provides full interactivity with vuex.
 
-::: tip
-Follow the [step by step manual](./vuex-asr/learn-by-example/hello-world-example.html) to get started.
+::: tip get started
+Follow the [step by step manual](./vuex-asr/learn-by-example/hello-world-example.html).
 :::
 
 ## tl;dr
@@ -55,8 +55,8 @@ Which will bind the the state item `notifyMessage`, living in the namespace `Use
     >
 ```
 
-::: tip
-about reactivity: If `User/Settings/notifyMessage` updates in the store, the `message` in `<message-component>` will update too.
+::: tip about reactivity
+If `User/Settings/notifyMessage` updates in the store, the `message` in `<message-component>` will update too.
 :::
 
 ### a more complex implementation

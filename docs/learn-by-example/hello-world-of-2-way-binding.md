@@ -2,12 +2,11 @@
 
 In the [hello world example](./hello-world-example.html) and [getters example](./getters-example.html) we saw that we can bind a variable or a getter from the store to the component with `asr-bind-state` and `asr-bind-getters`. Now let's see if we can update the variable in one component and have it being updated in the other. For this we'll extend our hello world example.
 
-::: tip
-For a quick overview go to the sandbox environment to follow along:
-[hello world of 2 way binding example (codesandbox)](https://codesandbox.io/s/manual-getters-example-kfww7)
+::: tip codesandbox
+[hello world of 2 way binding example](https://codesandbox.io/s/manual-getters-example-kfww7)
 :::
 
-::: tip
+::: tip TIP
 Binding a state item and being able to mutate it is called **2 way model binding**. In this example we are going to bind an item from the state directly as a model. This is **quite useful in the rapid-prototyping phase of the project**, but **NOT RECOMMENDED in production**. For production it is recommended to use vuex mutations for synchronous- and actions for asynchronous manipulation of state items. Read more in [working with mutations](./mutations.html)
 :::
 
@@ -76,7 +75,7 @@ Now that we have our variable message available as a model we can simply assign 
       <input v-model="message">
     </template>
 ```
-::: tip
+::: tip TIP
 For more on this see [Vue documentation on v-model](https://vuejs.org/v2/guide/forms.html?) 
 ::: 
 

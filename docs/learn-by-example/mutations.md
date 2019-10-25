@@ -2,16 +2,15 @@
 
 Vuex offers a great way to mutate state items with the use of mutations and actions. Vuex-asr enables you to bind those actions and mutations the same way you could bind [state](./hello-world-example.html) and [getters](getters-example.html) by the component's attributes. In this chapter we discuss the use of mutations.
 
-::: tip
-For a quick overview go to the sandbox environment to follow along:
-[mutations (codesandbox)](https://codesandbox.io/s/manual-mutations-6q5d6)
+::: tip codesandbox
+[mutations](https://codesandbox.io/s/manual-mutations-6q5d6)
 :::
 
 ## vuex mutations in a nutshell
 
 Mutations are methods used in the store to change/mutate the state and keep track of those changes/mutations. Read more about mutations in the [vuex guide/mutations](https://vuex.vuejs.org/guide/mutations.html).
 
-::: tip
+::: tip TIP
 Keeping track of mutations is very helpful for debugging. It's recommended to download the [vue.js devtools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) for chrome. If you go to the `Vuex` tab, you'll see your mutations and state. 
 :::
 
@@ -133,7 +132,7 @@ Namespacing is discussed in more detail [here](./namespacing.html), but for conv
   ...
 ```
 
-::: tip
+::: tip TIP
 read more about [namespacing](./namespacing.html)
 ::: 
 

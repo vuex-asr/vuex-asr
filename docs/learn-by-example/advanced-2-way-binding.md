@@ -4,8 +4,7 @@ In hello world of 2-way binding we discussed how to directly interact with a sta
 
 If you wanna create a two way binding with a mutation there are two ways you could work:
 
-::: tip
-For a quick overview go to the sandbox environment to follow along:
+::: tip codesandbox
 [advanced two way binding](https://codesandbox.io/s/manual-advanced-2-way-binding-wkcny)
 :::
 

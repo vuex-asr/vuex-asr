@@ -1,10 +1,9 @@
 # hello world example
 
-In the example below you find an example of the most basic implementation of vuex-asr.
+In the example below you find an example of the most basic implementation of vuex-asr. All the examples in this tutorial have sandbox environments in codesandbox, open them in another tab and follow along.
 
-::: tip
-For a quick overview go to the sandbox environment to follow along:
-[hello world example (codesandbox)](https://codesandbox.io/s/manual-hello-world-example-3tx2w)
+::: tip codesandbox
+[hello world example](https://codesandbox.io/s/manual-hello-world-example-3tx2w)
 :::
 
 ## the store
@@ -128,7 +127,7 @@ And for reference:
     </template>
 ```
 
-::: tip
+::: tip TIP
 This works the same for [getters](./getters-example.html), [mutations](./mutations.html) and [actions](./actions.html) as discussed in the next chapters.
 :::
 

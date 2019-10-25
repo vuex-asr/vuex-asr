@@ -5,12 +5,11 @@ An important feature of the vuex-asr plugin is the ability to pass model-binding
 This means that a model that has already been bound to the component, either via vuex-asr or conventionally in the component itself, can also be passed to a child component. Giving you ultimate flexibility in organising and generalising your codebase.
 
 
-::: tip
+::: tip TIP
 You could use `asr-pass` in existing vue projects without using other vuex-asr functionality, to pass a binding from a parent- to a child-component.
 :::
 
-::: tip
-For a quick overview go to the sandbox environment to follow along:
+::: tip codesandbox
 [asr-pass](https://codesandbox.io/s/manual-asr-pass-nvcd5)
 :::
 

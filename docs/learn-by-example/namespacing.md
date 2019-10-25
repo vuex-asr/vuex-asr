@@ -2,9 +2,8 @@
 
 Since vuex-asr is intended to make building large scale applications more easy let's see what namespacing could bring to the table.
 
-::: tip
-For a quick overview go to the sandbox environment to follow along:
-[namespacing example (codesandbox)](https://codesandbox.io/s/manual-namespacing-q71oe)
+::: tip codesandbox
+[namespacing example](https://codesandbox.io/s/manual-namespacing-q71oe)
 :::
 
 ## namespace convention for all binders
@@ -69,7 +68,7 @@ Now we import it into the root store:
 ```
 Notice the `modules` property added to the store. In here we've created the namespace `USER` to which we assign the imported module.
 
-::: tip
+::: tip TIP
 The capitalization of the namespaces (e.g. USER) is just a preference.
 :::  
 
