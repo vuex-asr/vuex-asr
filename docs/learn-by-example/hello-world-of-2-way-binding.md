@@ -8,7 +8,7 @@ For a quick overview go to the sandbox environment to follow along:
 :::
 
 ::: warning
-Binding a state item and being able to mutate it is called **2 way model binding**. In this example we are going to bind an item from the state directly as a model. This is quite useful in the rapid-prototyping phase of the project, but *NOT RECOMMENDED* in production. For production it is recommended to use vuex mutations for synchronous- and actions for asynchronous manipulation of state items. Read more in [advanced 2 way binding](./advanced-2-way-binding.html)
+Binding a state item and being able to mutate it is called **2 way model binding**. In this example we are going to bind an item from the state directly as a model. This is quite useful in the rapid-prototyping phase of the project, but *NOT RECOMMENDED* in production. For production it is recommended to use vuex mutations for synchronous- and actions for asynchronous manipulation of state items. Read more in [working with mutations](./mutations.html)
 :::
 
 ## binding a model

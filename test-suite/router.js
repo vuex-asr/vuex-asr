@@ -61,9 +61,7 @@ export default new Router({
       path: "/sandbox",
       name: "sandbox",
       component: () =>
-          import(
-              /* webpackChunkName: "about" */ "./views/Sandbox.vue"
-              )
+        import(/* webpackChunkName: "about" */ "./views/Sandbox.vue")
     }
   ]
 });
