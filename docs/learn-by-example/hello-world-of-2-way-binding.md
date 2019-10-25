@@ -6,13 +6,13 @@ In the [hello world example](./hello-world-example.html) and [getters example](.
 [hello world of 2 way binding example](https://codesandbox.io/s/manual-getters-example-kfww7)
 :::
 
-::: tip TIP
-Binding a state item and being able to mutate it is called **2 way model binding**. In this example we are going to bind an item from the state directly as a model. This is **quite useful in the rapid-prototyping phase of the project**, but **NOT RECOMMENDED in production**. For production it is recommended to use vuex mutations for synchronous- and actions for asynchronous manipulation of state items. Read more in [working with mutations](./mutations.html)
-:::
+## a note on direct state bindings
+
+Binding a state item and being able to mutate it is called **2 way model binding**. In this example we are going to directly bind a state item as a model. This is **quite useful in the rapid-prototyping phase of the project**, but definitely **NOT RECOMMENDED in production**. For production it is recommended to use vuex mutations for synchronous- and actions for asynchronous manipulation of state items. Read more in [working with mutations](./mutations.html)
 
 ## binding a model
 
-To make the store variable `message` (as we used in our previous example) 2-way-bound, we need to tell the component that the variable is a model. (Meaning it implements both a getter and a setter).
+Let's take a look at the store again:
 
 ```js{10}
     // src/vuex/store.js
@@ -30,6 +30,9 @@ To make the store variable `message` (as we used in our previous example) 2-way-
     
     export { Store };
 ```
+
+To make the store variable `message` (as we used in our previous example) 2-way-bound, we need to tell the component that the variable is a model. (Meaning it implements both a getter and a setter).
+
 
 So for this example we have to update our App.vue file:
 ```vue{6}
