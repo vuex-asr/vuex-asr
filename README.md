@@ -44,7 +44,7 @@ You could do something like this:
 
 Which will bind the the state item `notifyMessage`, living in the namespace `User/Settings`, AS `message` to the `<message-component>`. 
 
-```vue{5}
+```vue
 // MessageComponent.vue
 
 <template>    
@@ -63,7 +63,7 @@ about reactivity: If `User/Settings/notifyMessage` updates in the store, the `me
 
 We could also use it to provide more complex components with store bindings:
 
-```vue{2,7,10,13}
+```vue
     <some-component
       asr-bind-state="
         message, 
