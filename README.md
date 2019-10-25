@@ -1,16 +1,14 @@
-# Vuex-ASR, Automated Store Resolution for Vue
-
-Vuex ASR leverages the ability to bind store items to a component by attribute. It also enables you to map the store items to the nameconvention you use in your components, This means that your components code becomes independent from the store.
-
-You can find documentation here:
-https://vuex-asr.github.io/vuex-asr/
+# Vuex-ASR - Automated Store Resolution for Vue | Documentation
 
 * Version: 0.7 Beta RC
 * License M.I.T.
+* [Github Repository](https://github.com/vuex-asr/vuex-asr)
 * author: Joris Wenting
 * email: vuex.asr@gmail.com
+* [linkedIn](https://www.linkedin.com/in/joriswenting/).
+* [contribute](./helpers/contribute.html)
 
-### How do I get set up? ###
+## install
 
 You can install the package via NPM:
 
@@ -18,7 +16,72 @@ You can install the package via NPM:
 npm install vuex-asr
 ```
 
-Follow the manual, the [hello world example](https://vuex-asr.github.io/vuex-asr/learn-by-example/hello-world-example.html) to get started, it contains full setup and also a link to a code-sandbox to fiddle around without having to setup.
+
+## quick summary
+
+Vuex-asr removes the necessity to describe your vuex store bindings in the component's script [state](./vuex-asr/learn-by-example/hello-world-example.html), [getters](./vuex-asr/learn-by-example/getters-example.html), [mutations](./vuex-asr/learn-by-example/mutations.html) and [actions](./vuex-asr/learn-by-example/actions.html). 
+
+The plugin automatically resolves  bindings and is able to map them from the component's attributes, allowing your component's code to become **generic** and **independent** from the Vuex store :sunglasses:.
+
+vuex-asr provides full interactivity with vuex.
+
+::: tip
+Follow the [step by step manual](./vuex-asr/learn-by-example/hello-world-example.html) to get started.
+:::
+
+## tl;dr
+
+### generic components able to be stateful
+
+With vuex-asr you could start developing your codebase with generic components (no bindings described in the component code) and hook them up to the vuex ecosystem, by the attribute of the component.
+
+### simple example
+You could do something like this:
+
+```vue
+<message-component asr-bind-state="User/Settings/notifyMessage AS message"/>
+```
+
+Which will bind the the state item `notifyMessage`, living in the namespace `User/Settings`, AS `message` to the `<message-component>`. 
+
+```vue{5}
+// MessageComponent.vue
+
+<template>    
+    <div class="some-markup">
+        {{ message }}
+    </div>
+</template>
+    >
+```
+
+::: tip
+about reactivity: If `User/Settings/notifyMessage` updates in the store, the `message` in `<message-component>` will update too.
+:::
+
+### a more complex implementation
+
+We could also use it to provide more complex components with store bindings:
+
+```vue{2,7,10,13}
+    <some-component
+      asr-bind-state="
+        message, 
+        USER/userObject AS user,
+        PHOTOS/recentPhotos
+        PHOTOS/likedPhotos"
+      asr-bind-getters="
+        PHOTOS/recentPhotos
+        PHOTOS/likedPhotos"
+      asr-bind-mutations="
+        USER/setMessageUser
+        PHOTOS/addNewPhoto"
+      asr-bind-actions="
+        PHOTOS/fetchNewPhotos"
+    ></some-component>
+```
+
+In this case we bind [state](./vuex-asr/learn-by-example/hello-world-example.html), [getters](./vuex-asr/learn-by-example/getters-example.html), [mutations](./vuex-asr/learn-by-example/mutations.html) and [actions](./vuex-asr/learn-by-example/actions.html) items to `<some-component>`. 
 
 ### Contribution guidelines ###
 
@@ -35,12 +98,6 @@ And please also share work in progress if you get stuck, include a link to a cod
 
 #### Code review
 
-I solo started this project and I'm looking for help, so please contact me if you are interested. <link to linkedin>
+I solo started this project and I'm looking for help, so please contact me if you are interested.
 
 This also means that at the moment I cannot promise other than that I will do my best to keep up with requests for code review. 
-
-### Who do I talk to? ###
-
-* Joris Wenting
-* vuex.asr@gmail.com
-* or message and connect on [linkedIn](https://www.linkedin.com/in/joriswenting/).
