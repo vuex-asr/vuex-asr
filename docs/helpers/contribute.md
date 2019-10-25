@@ -31,14 +31,6 @@ Use the sandboxes to create examples and share your implementations and experien
 IDEA: add a page to the manual with links to sandbox showcases?
 :::
 
-## Todo before release 0.7RC
-
- :black_square_button: Migrate repo to vuex-asr github  
- :black_square_button: deploy docs
- :black_square_button: create release branche
- :black_square_button: publish package to NPM
- :black_square_button: create code-examples in [scrimba](https://scrimba.com)
- 
 ## Whishlist / Roadmap
 
 - Improve testing
