@@ -85,6 +85,54 @@ In the example component we now just can use the variable `message`
     </template>
 ```
 
+## aliasing
+
+Aliasing gives you the ability to map your bindings.
+
+Let's say we have a store:
+```javascript{6}
+...
+
+const Store = new Vuex.Store({
+  state: {
+    message: "message in Root of VUEX",
+    anotherMessage: "another message!"
+  }
+});
+```
+...
+
+Now we wanna reuse the component `<example-message>`, but this component has `message` as local variable. Now the helper aliasing could do that trick and reuse (re-instantiate) the component `<example-message>` with other bindings with the help of the `AS` keyword:
+
+```vue{6}
+// src/App.vue
+
+<template>
+  <div id="app">
+    <example-message asr-bind-state="message"/>
+    <example-message asr-bind-state="anotherMessage AS message"/>
+  </div>
+</template>
+
+...  
+```
+Notice the `AS` syntax: the state item `anotherMessage` is now bound under the name `message` so the component can make use of it under that name: `message`. 
+
+And for reference:
+
+```vue{4}
+    // src/components/ExampleMessage.vue
+    
+    <template>
+      <p>{{ message }}</p>
+    </template>
+```
+
+::: tip
+This works the same for [getters](./getters-example.html), [mutations](./mutations.html) and [actions](./actions.html) as discussed in the next chapters.
+:::
+
+
 ## next steps
 
 This is the simplest implementation of vuex-asr. In the next chapter you'll see how you could also bind a getter.
