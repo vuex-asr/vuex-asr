@@ -29,8 +29,6 @@ vuex-asr provides full interactivity with vuex.
 Follow the [step by step manual](step-by-step-guide/prerequisite.html).
 :::
 
-## tl;dr
-
 ### generic components able to be stateful
 
 With vuex-asr you could start developing your codebase with generic components (no bindings described in the component code) and hook them up to the vuex ecosystem, by the attribute of the component.
