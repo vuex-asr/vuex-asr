@@ -15,7 +15,27 @@ You can install the package via NPM:
 ```bash
 npm install vuex-asr
 ```
+## setup
 
+In your (typically) main.js:
+
+```javascript
+import Vue from "vue";
+import App from "./App.vue";
+import { Store } from "./vuex/store";
+import VuexASR from "vuex-asr";
+
+Vue.use(VuexASR);
+
+new Vue({
+  render: h => h(App),
+  store: Store
+}).$mount("#app");
+```
+and your ready to use vuex-asr.
+
+## codesandbox examples
+The [step by step guide](step-by-step-guide/prerequisite.html) contains examples with codesandboxes so you could start right away with exploring the features, with no setup required.
 
 ## quick summary
 
