@@ -17,7 +17,7 @@ npm install vuex-asr
 ```
 
 ::: tip get started
-Follow the [step by step manual](step-by-step-guide/prerequisite.html).
+For installation and trying out vuex-asr follow the [step by step guide](step-by-step-guide/prerequisite.html) it contains examples with codesandboxes so you could start right away with exploring the features, with no setup required.
 :::
 
 ## quick summary
