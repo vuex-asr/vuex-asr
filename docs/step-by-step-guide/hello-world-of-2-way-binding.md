@@ -78,11 +78,11 @@ Now that we have our variable message available as a model we can simply assign 
       <input v-model="message">
     </template>
 ```
-::: tip TIP
 For more on this see [Vue documentation on v-model](https://vuejs.org/v2/guide/forms.html?) 
-::: 
 
+::: tip about reactivity
 If you now change the contents of the message in the input field that is rendered you'll see that also the message in the `example-message` component is updated.
+::: 
 
 ## next steps
 
