@@ -50,13 +50,13 @@ You could bind the state item `message` like this:
 <message-component asr-bind-state="message"/>
 ```
 
-If you have your state item in a `namespace`:
+If you have your state item in a `namespace` you could bind it like this:
 
 ```vue
 <message-component asr-bind-state="User/Settings/message"/>
 ```
 
-If you have to map your state item to match components naming-convention you could use the alias keyword `AS`:
+If you have to `alias` your state item to match components name convention:
 
 ```vue
 <message-component asr-bind-state="User/Settings/notifyMessage AS message"/>
@@ -74,9 +74,9 @@ This will bind the the state item `notifyMessage`, living in the namespace `User
 </template>
 ```
 
-#### about reactivity
+::: tip about reactivity
 If `User/Settings/notifyMessage` updates in the store, the `message` in `<message-component>` will update too.
-
+:::
 
 ### a more complex implementation
 
