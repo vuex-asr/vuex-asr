@@ -44,7 +44,7 @@ const Store = new Vuex.Store({
 });
 ```
 
-You could bind the state item `message` like this:
+With `asr-bind-state` you could bind the state item `message` like this:
 
 ```vue
 <message-component asr-bind-state="message"/>
