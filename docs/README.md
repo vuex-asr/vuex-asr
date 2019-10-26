@@ -39,7 +39,7 @@ With vuex-asr you could start developing your codebase with generic components (
 
 Assume you have a vuex store:
 
-```javascript
+```javascript{3}
 const Store = new Vuex.Store({
   state: {
     message: "This is a message in the Root of VUEX",
@@ -75,7 +75,6 @@ This will bind the the state item `notifyMessage`, living in the namespace `User
         {{ message }}
     </div>
 </template>
-    >
 ```
 
 ::: tip about reactivity
