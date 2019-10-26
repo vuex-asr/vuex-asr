@@ -2,11 +2,11 @@
 
 * Version: 0.7.2
 * License M.I.T.
-* [Github Repository](https://github.com/vuex-asr/vuex-asr)
+* [Manual]([step by step manual](https://vuex-asr.github.io/vuex-asr/) to get started.)
 * author: Joris Wenting
 * email: vuex.asr@gmail.com
 * [linkedIn](https://www.linkedin.com/in/joriswenting/).
-* [contribute](https://vuex-asr.github.io/vuex-asr/vuex-asr/helpers/contribute.html)
+* [contribute](https://vuex-asr.github.io/vuex-asr/helpers/contribute.html)
 
 ## install
 
@@ -19,13 +19,13 @@ npm install vuex-asr
 
 ## quick summary
 
-Vuex-asr removes the necessity to describe your vuex store bindings in the component's script [state](https://vuex-asr.github.io/vuex-asr/vuex-asr/learn-by-example/hello-world-example.html), [getters](https://vuex-asr.github.io/vuex-asr/vuex-asr/learn-by-example/getters-example.html), [mutations](https://vuex-asr.github.io/vuex-asr/vuex-asr/learn-by-example/mutations.html) and [actions](https://vuex-asr.github.io/vuex-asr/vuex-asr/learn-by-example/actions.html). 
+Vuex-asr removes the necessity to describe your vuex store bindings in the component's script [state](https://vuex-asr.github.io/vuex-asr/step-by-step-guide/hello-world-example.html), [getters](https://vuex-asr.github.io/vuex-asr/step-by-step-guide/getters-example.html), [mutations](https://vuex-asr.github.io/vuex-asr/step-by-step-guide/mutations.html) and [actions](https://vuex-asr.github.io/vuex-asr/step-by-step-guide/actions.html). 
 
 The plugin automatically resolves  bindings and is able to map them from the component's attributes, allowing your component's code to become **generic** and **independent** from the Vuex store :sunglasses:.
 
 vuex-asr provides full interactivity with vuex.
 
-Follow the [step by step manual](https://vuex-asr.github.io/vuex-asr/vuex-asr/learn-by-example/hello-world-example.html) to get started.
+Follow the [step by step manual](https://vuex-asr.github.io/vuex-asr/step-by-step-guide/hello-world-example.html) to get started.
 
 ## tl;dr
 
@@ -100,6 +100,6 @@ We could also use it to provide more complex components with store bindings:
     ></some-component>
 ```
 
-In this case we bind [state](https://vuex-asr.github.io/vuex-asr/vuex-asr/learn-by-example/hello-world-example.html), [getters](https://vuex-asr.github.io/vuex-asr/vuex-asr/learn-by-example/getters-example.html), [mutations](https://vuex-asr.github.io/vuex-asr/vuex-asr/learn-by-example/mutations.html) and [actions](https://vuex-asr.github.io/vuex-asr/vuex-asr/learn-by-example/actions.html) items to `<some-component>`. 
+In this case we bind [state](https://vuex-asr.github.io/vuex-asr/step-by-step-guide/hello-world-example.html), [getters](https://vuex-asr.github.io/vuex-asr/step-by-step-guide/getters-example.html), [mutations](https://vuex-asr.github.io/vuex-asr/step-by-step-guide/mutations.html) and [actions](https://vuex-asr.github.io/vuex-asr/step-by-step-guide/actions.html) items to `<some-component>`. 
 
-Follow the [step by step manual](https://vuex-asr.github.io/vuex-asr/vuex-asr/learn-by-example/hello-world-example.html) to get started it contains sandboxes, so no setup is required to try out all of the examples and fiddle around.
+Follow the [step by step manual](https://vuex-asr.github.io/vuex-asr/step-by-step-guide/hello-world-example.html) to get started it contains sandboxes, so no setup is required to try out all of the examples and fiddle around.
