@@ -36,13 +36,36 @@ Follow the [step by step manual](./learn-by-example/prerequisite.html).
 With vuex-asr you could start developing your codebase with generic components (no bindings described in the component code) and hook them up to the vuex ecosystem, by the attribute of the component.
 
 ### simple example
-You could do something like this:
+
+Assume you have a vuex store:
+
+```javascript
+const Store = new Vuex.Store({
+  state: {
+    message: "This is a message in the Root of VUEX",
+  }
+});
+```
+
+You could bind the state item `message` like this:
+
+```vue
+<message-component asr-bind-state="message"/>
+```
+
+If you have your state item in a `namespace`
+
+```vue
+<message-component asr-bind-state="User/Settings/message"/>
+```
+
+If you have to `alias` your state item to match components nameconvention:
 
 ```vue
 <message-component asr-bind-state="User/Settings/notifyMessage AS message"/>
 ```
 
-Which will bind the the state item `notifyMessage`, living in the namespace `User/Settings`, AS `message` to the `<message-component>`. 
+This will bind the the state item `notifyMessage`, living in the namespace `User/Settings`, AS `message` to the `<message-component>`. 
 
 ```vue{5}
 // MessageComponent.vue
