@@ -102,4 +102,4 @@ We could also use it to provide more complex components with store bindings:
 
 In this case we bind [state](https://vuex-asr.github.io/vuex-asr/vuex-asr/learn-by-example/hello-world-example.html), [getters](https://vuex-asr.github.io/vuex-asr/vuex-asr/learn-by-example/getters-example.html), [mutations](https://vuex-asr.github.io/vuex-asr/vuex-asr/learn-by-example/mutations.html) and [actions](https://vuex-asr.github.io/vuex-asr/vuex-asr/learn-by-example/actions.html) items to `<some-component>`. 
 
-Follow the [step by step manual](https://vuex-asr.github.io/vuex-asr/vuex-asr/learn-by-example/hello-world-example.html) to get started it contains no configuration sandboxes to try out all of the examples and fiddle around with it.
+Follow the [step by step manual](https://vuex-asr.github.io/vuex-asr/vuex-asr/learn-by-example/hello-world-example.html) to get started it contains sandboxes so no setup is required to try out all of the examples and fiddle around.
