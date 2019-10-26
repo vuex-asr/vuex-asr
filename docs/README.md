@@ -19,14 +19,14 @@ npm install vuex-asr
 
 ## quick summary
 
-Vuex-asr removes the necessity to describe your vuex store bindings in the component's script [state](./learn-by-example/hello-world-example.html), [getters](./learn-by-example/getters-example.html), [mutations](./learn-by-example/mutations.html) and [actions](./learn-by-example/actions.html). 
+Vuex-asr removes the necessity to describe your vuex store bindings in the component's script [state](step-by-step-guide/hello-world-example.html), [getters](step-by-step-guide/getters-example.html), [mutations](step-by-step-guide/mutations.html) and [actions](step-by-step-guide/actions.html). 
 
 The plugin automatically resolves  bindings and is able to map them from the component's attributes, allowing your component's code to become **generic** and **independent** from the Vuex store :sunglasses:.
 
 vuex-asr provides full interactivity with vuex.
 
 ::: tip get started
-Follow the [step by step manual](./learn-by-example/prerequisite.html).
+Follow the [step by step manual](step-by-step-guide/prerequisite.html).
 :::
 
 ## tl;dr
@@ -103,8 +103,8 @@ We could also use it to provide more complex components with store bindings:
     ></some-component>
 ```
 
-In this case we bind [state](./learn-by-example/hello-world-example.html), [getters](./learn-by-example/getters-example.html), [mutations](./learn-by-example/mutations.html) and [actions](./learn-by-example/actions.html) items to `<some-component>`. 
+In this case we bind [state](step-by-step-guide/hello-world-example.html), [getters](step-by-step-guide/getters-example.html), [mutations](step-by-step-guide/mutations.html) and [actions](step-by-step-guide/actions.html) items to `<some-component>`. 
 
 ::: tip get familiar with the concepts
-[hello world example](./learn-by-example/hello-world-example.html).
+[hello world example](step-by-step-guide/hello-world-example.html).
 :::

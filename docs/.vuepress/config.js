@@ -8,30 +8,30 @@ module.exports = {
     themeConfig: {
         nav: [
             {text: 'Home', link: '/'},
-            {text: 'Guide', link: '/learn-by-example/hello-world-example.html'},
+            {text: 'Guide', link: '/step-by-step-guide/hello-world-example.html'},
             {text: 'Cheatsheet', link: '/helpers/cheat-sheet.html'},
             {text: 'Contribute', link: '/helpers/contribute.html'},
             {text: 'Github', link: 'https://github.com/vuex-asr/vuex-asr'}
         ],
         sidebar: [
             {
-                title: 'Learn by example',   // required
+                title: 'Step by step guide',   // required
                 collapsable: false, // optional, defaults to true
                 displayAllHeaders: true, // Default: false
                 sidebarDepth: 1,    // optional, defaults to 1
                 children: [
-                    '/learn-by-example/prerequisite.html',
-                    '/learn-by-example/installation.html',
-                    '/learn-by-example/hello-world-example.html',
-                    '/learn-by-example/getters-example.html',
-                    '/learn-by-example/hello-world-of-2-way-binding.html',
-                    '/learn-by-example/mutations.html',
-                    '/learn-by-example/actions.html',
-                    '/learn-by-example/aliasing.html',
-                    '/learn-by-example/namespacing.html',
-                    '/learn-by-example/passing-bindings.html',
-                    '/learn-by-example/binding-multiple-objects-to-a-component.html',
-                    '/learn-by-example/binding-a-configuration.html',
+                    '/step-by-step-guide/prerequisite.html',
+                    '/step-by-step-guide/installation.html',
+                    '/step-by-step-guide/hello-world-example.html',
+                    '/step-by-step-guide/getters-example.html',
+                    '/step-by-step-guide/hello-world-of-2-way-binding.html',
+                    '/step-by-step-guide/mutations.html',
+                    '/step-by-step-guide/actions.html',
+                    '/step-by-step-guide/aliasing.html',
+                    '/step-by-step-guide/namespacing.html',
+                    '/step-by-step-guide/passing-bindings.html',
+                    '/step-by-step-guide/binding-multiple-objects-to-a-component.html',
+                    '/step-by-step-guide/binding-a-configuration.html',
                 ]
             },
             {
