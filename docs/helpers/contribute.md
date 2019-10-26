@@ -19,10 +19,6 @@ You could help by reporting a bug recreated in a sandbox from this template. Jus
 
 If you like to help build this project to the next-level, the project could really use help on keeping it up to date with upcoming versions of vue and vuex and is open for new feature suggestions and PR's.
 
-::: warning
-FEEDBACK: what is the best place to discuss feature requests?
-::: 
-
 ## Contribute by example
 
 Use the sandboxes to create examples and share your implementations and experiences anywhere you like. Sharing examples will help to create a better understanding of the software.
