@@ -16,6 +16,9 @@ You can install the package via NPM:
 npm install vuex-asr
 ```
 
+::: tip get started
+Follow the [step by step manual](step-by-step-guide/prerequisite.html).
+:::
 
 ## quick summary
 
@@ -24,10 +27,6 @@ Vuex-asr removes the necessity to describe your vuex store bindings in the compo
 The plugin automatically resolves  bindings and is able to map them from the component's attributes, allowing your component's code to become **generic** and **independent** from the Vuex store :sunglasses:.
 
 vuex-asr provides full interactivity with vuex.
-
-::: tip get started
-Follow the [step by step manual](step-by-step-guide/prerequisite.html).
-:::
 
 ### generic components able to be stateful
 
