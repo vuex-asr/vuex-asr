@@ -2,7 +2,7 @@
 
 * Version: 0.7.2
 * License M.I.T.
-* [Manual](https://vuex-asr.github.io/vuex-asr/)
+* [Online Documentation](https://vuex-asr.github.io/vuex-asr/)
 * author: Joris Wenting
 * email: vuex.asr@gmail.com
 * [linkedIn](https://www.linkedin.com/in/joriswenting/).
