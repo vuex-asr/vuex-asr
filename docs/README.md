@@ -83,3 +83,6 @@ We could also use it to provide more complex components with store bindings:
 
 In this case we bind [state](./learn-by-example/hello-world-example.html), [getters](./learn-by-example/getters-example.html), [mutations](./learn-by-example/mutations.html) and [actions](./learn-by-example/actions.html) items to `<some-component>`. 
 
+::: tip get started
+[hello world example](./learn-by-example/hello-world-example.html).
+:::
