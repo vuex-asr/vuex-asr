@@ -102,21 +102,3 @@ We could also use it to provide more complex components with store bindings:
 
 In this case we bind [state](https://vuex-asr.github.io/vuex-asr/vuex-asr/learn-by-example/hello-world-example.html), [getters](https://vuex-asr.github.io/vuex-asr/vuex-asr/learn-by-example/getters-example.html), [mutations](https://vuex-asr.github.io/vuex-asr/vuex-asr/learn-by-example/mutations.html) and [actions](https://vuex-asr.github.io/vuex-asr/vuex-asr/learn-by-example/actions.html) items to `<some-component>`. 
 
-### Contribution guidelines ###
-
-#### Writing tests
-create a test file in
-./tests/NameOfYourTest.vue
-and see
-./tests/ExampleTest.vue
-for conventions.
-
-On a more general level, try to be concise in formulating the objective of your test.
-
-And please also share work in progress if you get stuck, include a link to a codesandbox or scrimble.
-
-#### Code review
-
-I solo started this project and I'm looking for help, so please contact me if you are interested.
-
-This also means that at the moment I cannot promise other than that I will do my best to keep up with requests for code review. 
