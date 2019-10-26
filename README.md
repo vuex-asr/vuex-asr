@@ -50,13 +50,13 @@ You could bind the state item `message` like this:
 <message-component asr-bind-state="message"/>
 ```
 
-If you have your state item in a `namespace`
+If you have your state item in a `namespace`:
 
 ```vue
 <message-component asr-bind-state="User/Settings/message"/>
 ```
 
-If you have to `alias` your state item to match components nameconvention:
+If you have to map your state item to match components naming-convention you could use the alias keyword `AS`:
 
 ```vue
 <message-component asr-bind-state="User/Settings/notifyMessage AS message"/>
