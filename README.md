@@ -35,7 +35,7 @@ new Vue({
 and your ready to use vuex-asr.
 
 ## codesandbox examples
-The [step by step guide](step-by-step-guide/prerequisite.html) contains examples with codesandboxes so you could start right away with exploring the features, with no setup required.
+The [step by step guide](https://vuex-asr.github.io/vuex-asr/step-by-step-guide/prerequisite.html) contains examples with codesandboxes so you could start right away with exploring the features, with no setup required.
 
 ## quick summary
 
