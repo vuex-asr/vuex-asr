@@ -67,11 +67,7 @@ Now we import it into the root store:
     export { Store };
 ```
 Notice the `modules` property added to the store. In here we've created the namespace `User` to which we assign the imported module.
-
-::: tip TIP
-The capitalization of the namespaces (e.g. USER) is just a preference.
-:::  
-
+ 
 ## the App component
 ```vue{7,11}
     // src/App.vue
