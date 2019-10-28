@@ -56,7 +56,7 @@ Now we import it into the root store:
     
     const Store = new Vuex.Store({
       modules: {
-        USER: ModuleUser,
+        User: ModuleUser,
       },
       state: {
         message: "message in Root of VUEX",
@@ -66,7 +66,7 @@ Now we import it into the root store:
     
     export { Store };
 ```
-Notice the `modules` property added to the store. In here we've created the namespace `USER` to which we assign the imported module.
+Notice the `modules` property added to the store. In here we've created the namespace `User` to which we assign the imported module.
 
 ::: tip TIP
 The capitalization of the namespaces (e.g. USER) is just a preference.
@@ -80,11 +80,11 @@ The capitalization of the namespaces (e.g. USER) is just a preference.
       <div id="app">
         <example-message asr-bind-state="message"/>
     	<example-message asr-bind-state="anotherMessage AS message"/>
-    	<example-message asr-bind-state="USER/message"/>
+    	<example-message asr-bind-state="User/message"/>
     
         <text-input asr-bind-state="message IS v-model"/>
         <text-input asr-bind-state="anotherMessage AS message IS v-model"/>
-        <text-input asr-bind-state="USER/message IS v-model"/>
+        <text-input asr-bind-state="User/message IS v-model"/>
       </div>
     </template>
     
@@ -97,12 +97,12 @@ Notice the pipe `/` character in the syntax: `USER/message` separating `USER` as
 If we have a deeper namespace we extend the namespace with the `/` character:
 
 For example binding a message from the USER/SETTINGS namespace:
-```vue
+```vue{5}
     // src/App.vue
     
     <template>
       <div id="app">
-        <text-input asr-bind-state="USER/SETTINGS/message IS v-model"/>
+        <text-input asr-bind-state="User/Settings/message IS v-model"/>
       </div>
     </template>
     
