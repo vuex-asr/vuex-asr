@@ -8,6 +8,23 @@
 * [linkedIn](https://www.linkedin.com/in/joriswenting/).
 * [contribute](./helpers/contribute.html)
 
+## what is vuex-asr?
+
+Vuex-asr removes the necessity to describe your vuex store bindings in the component's script. With vuex-asr you're able to bind [state](step-by-step-guide/hello-world-example.html), [getters](step-by-step-guide/getters-example.html), [mutations](step-by-step-guide/mutations.html) and [actions](step-by-step-guide/actions.html) from the component's attributes\directives:
+
+- asr-bind-state
+- asr-bind-getters
+- asr-bind-mutations
+- asr-bind-actions
+
+The plugin automatically resolves  bindings and is able to map them from the component's attributes, allowing your component's code to become **generic** and **independent** from the Vuex store :sunglasses:.
+
+vuex-asr provides full interactivity with vuex.
+
+### generic components able to be stateful
+
+With vuex-asr you could start developing your codebase with generic components (no bindings described in the component code) and hook them up to the vuex ecosystem, by the attribute of the component.
+
 ## install
 
 You can install the package via NPM:
@@ -15,7 +32,7 @@ You can install the package via NPM:
 ```bash
 npm install vuex-asr
 ```
-## setup
+### setup
 
 In your (typically) main.js:
 
@@ -34,22 +51,7 @@ new Vue({
 ```
 and you're ready to use vuex-asr.
 
-## codesandbox examples
-The [step by step guide](step-by-step-guide/prerequisite.html) contains examples with codesandboxes so you could start right away with exploring the features, with no setup required.
-
-## quick summary
-
-Vuex-asr removes the necessity to describe your vuex store bindings in the component's script [state](step-by-step-guide/hello-world-example.html), [getters](step-by-step-guide/getters-example.html), [mutations](step-by-step-guide/mutations.html) and [actions](step-by-step-guide/actions.html). 
-
-The plugin automatically resolves  bindings and is able to map them from the component's attributes, allowing your component's code to become **generic** and **independent** from the Vuex store :sunglasses:.
-
-vuex-asr provides full interactivity with vuex.
-
-### generic components able to be stateful
-
-With vuex-asr you could start developing your codebase with generic components (no bindings described in the component code) and hook them up to the vuex ecosystem, by the attribute of the component.
-
-### simple example
+## simple example
 
 Assume you have a vuex store:
 
@@ -95,7 +97,7 @@ This will bind the the state item `notifyMessage`, living in the namespace `User
 If `User/Settings/notifyMessage` updates in the store, the `message` in `<message-component>` will update too.
 :::
 
-### a more complex implementation
+## a more complex implementation
 
 We could also use it to provide more complex components with store bindings:
 

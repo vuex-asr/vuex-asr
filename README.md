@@ -39,7 +39,7 @@ The [step by step guide](https://vuex-asr.github.io/vuex-asr/step-by-step-guide/
 
 ## quick summary
 
-Vuex-asr removes the necessity to describe your vuex store bindings in the component's script [state](https://vuex-asr.github.io/vuex-asr/step-by-step-guide/hello-world-example.html), [getters](https://vuex-asr.github.io/vuex-asr/step-by-step-guide/getters-example.html), [mutations](https://vuex-asr.github.io/vuex-asr/step-by-step-guide/mutations.html) and [actions](https://vuex-asr.github.io/vuex-asr/step-by-step-guide/actions.html). 
+Vuex-asr removes the necessity to describe your vuex store bindings in the component's script, With vuex-asr you're able to bind [state](https://vuex-asr.github.io/vuex-asr/step-by-step-guide/hello-world-example.html), [getters](https://vuex-asr.github.io/vuex-asr/step-by-step-guide/getters-example.html), [mutations](https://vuex-asr.github.io/vuex-asr/step-by-step-guide/mutations.html) and [actions](https://vuex-asr.github.io/vuex-asr/step-by-step-guide/actions.html). 
 
 The plugin automatically resolves  bindings and is able to map them from the component's attributes, allowing your component's code to become **generic** and **independent** from the Vuex store :sunglasses:.
 
@@ -94,9 +94,8 @@ This will bind the the state item `notifyMessage`, living in the namespace `User
 </template>
 ```
 
-::: tip about reactivity
+### about reactivity
 If `User/Settings/notifyMessage` updates in the store, the `message` in `<message-component>` will update too.
-:::
 
 ### a more complex implementation
 
