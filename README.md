@@ -1,6 +1,6 @@
-# Vuex-ASR - Automated Store Resolution for Vue | Documentation
+# Vuex-ASR - Automated Store Resolution for Vue
 
-* Version: 0.7.2
+* Version: 0.7.4
 * License M.I.T.
 * [Online Documentation](https://vuex-asr.github.io/vuex-asr/)
 * author: Joris Wenting
@@ -34,18 +34,21 @@ new Vue({
 ```
 and your ready to use vuex-asr.
 
-## codesandbox examples
-The [step by step guide](https://vuex-asr.github.io/vuex-asr/step-by-step-guide/prerequisite.html) contains examples with codesandboxes so you could start right away with exploring the features, with no setup required.
+## what is vuex-asr?
 
-## quick summary
+Vuex-asr removes the necessity to describe your vuex store bindings in the component's script. With vuex-asr you're able to bind [state](step-by-step-guide/hello-world-example.html), [getters](step-by-step-guide/getters-example.html), [mutations](step-by-step-guide/mutations.html) and [actions](step-by-step-guide/actions.html) from the component's attributes\directives:
 
-Vuex-asr removes the necessity to describe your vuex store bindings in the component's script, With vuex-asr you're able to bind [state](https://vuex-asr.github.io/vuex-asr/step-by-step-guide/hello-world-example.html), [getters](https://vuex-asr.github.io/vuex-asr/step-by-step-guide/getters-example.html), [mutations](https://vuex-asr.github.io/vuex-asr/step-by-step-guide/mutations.html) and [actions](https://vuex-asr.github.io/vuex-asr/step-by-step-guide/actions.html). 
+- asr-bind-state
+- asr-bind-getters
+- asr-bind-mutations
+- asr-bind-actions
 
 The plugin automatically resolves  bindings and is able to map them from the component's attributes, allowing your component's code to become **generic** and **independent** from the Vuex store :sunglasses:.
 
 vuex-asr provides full interactivity with vuex.
 
-Follow the [step by step manual](https://vuex-asr.github.io/vuex-asr/step-by-step-guide/hello-world-example.html) to get started.
+## codesandbox examples
+The [step by step guide](https://vuex-asr.github.io/vuex-asr/step-by-step-guide/prerequisite.html) contains examples with codesandboxes so you could start right away with exploring the features, with no setup required.
 
 ## tl;dr
 
