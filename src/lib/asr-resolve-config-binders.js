@@ -21,8 +21,6 @@ export default class ResolveConfigBinders {
     let storeConfigItems = [];
 
     bindersConfig.forEach(binderItem => {
-      let storeLocationObject = {};
-
       if (
         binderItem.namespace === null ||
         bindersConfig === undefined ||

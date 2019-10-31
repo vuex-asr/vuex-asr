@@ -114,10 +114,7 @@ export default class Report {
 
   // Create a header for the report
 
-  createConsoleLogHeader(vueInstance, htmlTag, instanceName, propsData) {
-    const asrBindState = propsData.asrBindState;
-    const asrBindConfig = propsData.asrBindConfig;
-
+  createConsoleLogHeader(vueInstance, htmlTag) {
     console.log(
       `%cVUEX - ASR debug\n%c${htmlTag}`,
       "color: green; font-size: 16px; padding: 8px 0px",
@@ -135,14 +132,5 @@ export default class Report {
     if (message.clonedData) {
       console.log(message.clonedData);
     }
-  }
-
-  // Helper to dump a deep clone to the console
-
-  messageCloneData(message, messageData, messageFrom = "generic") {
-    console.group(`Cloned Data for: ${message}`);
-    console.log(`from: ${messageFrom}`);
-    messageData, console.log(clonedData);
-    console.groupEnd();
   }
 }

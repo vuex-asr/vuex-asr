@@ -1,4 +1,10 @@
-# Vuex-ASR - Automated Store Resolution for Vue | Documentation
+---
+home: true
+heroText: vuex-asr
+heroImage: ./vuex-asr-logo.png
+---
+
+# Documentation
 
 * Version: 0.7.4
 * License M.I.T.

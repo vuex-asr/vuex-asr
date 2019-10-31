@@ -49,10 +49,10 @@ export default class Router {
 
   hasNoBindings(vueInstance) {
     return (
-      this.hasComputed(this.vueInstance) === false &&
-      this.hasMethods(this.vueInstance) == false &&
-      this.hasPasses(this.vueInstance) === false &&
-      this.hasConfiguration(this.vueInstance) === false
+      this.hasComputed(vueInstance) === false &&
+      this.hasMethods(vueInstance) == false &&
+      this.hasPasses(vueInstance) === false &&
+      this.hasConfiguration(vueInstance) === false
     );
   }
 

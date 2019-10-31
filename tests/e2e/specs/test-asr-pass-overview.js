@@ -23,7 +23,7 @@ module.exports = {
       .assert.containsText(
         ".example-component-with-input > p",
         "changed by user input"
-    );
+      );
 
     browser.end();
   }
