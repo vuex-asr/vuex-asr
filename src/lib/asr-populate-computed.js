@@ -230,7 +230,7 @@ export default class PopulateComputed {
       if (item.binderType === "getters") {
         mapStateObject = {
           ...mapGetters({
-            namespacedBinding
+            [item.bind]: namespacedBinding
           })
         };
       } else {
