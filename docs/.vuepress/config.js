@@ -18,7 +18,7 @@ module.exports = {
                 title: 'Introduction',   // required
                 collapsable: false, // optional, defaults to true
                 displayAllHeaders: true, // Default: false
-                sidebarDepth: 1,    // optional, defaults to 1
+                sidebarDepth: 2,    // optional, defaults to 1
                 children: [
                     '/',
                 ]

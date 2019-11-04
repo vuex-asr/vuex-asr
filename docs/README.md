@@ -1,6 +1,5 @@
 # vuex-asr
 ## Automated Store Resolution for Vue
-### Documentation
 
 * Version: 0.7.41
 * License M.I.T.
