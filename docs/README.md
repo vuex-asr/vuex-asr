@@ -6,7 +6,7 @@ heroImage: ./vuex-asr-logo.png
 
 # Documentation
 
-* Version: 0.7.4
+* Version: 0.7.41
 * License M.I.T.
 * [Github Repository](https://github.com/vuex-asr/vuex-asr)
 * author: Joris Wenting
