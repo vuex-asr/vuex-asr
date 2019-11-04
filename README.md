@@ -35,7 +35,7 @@ new Vue({
   store: Store
 }).$mount("#app");
 ```
-and your ready to use vuex-asr.
+and you're ready to use vuex-asr.
 
 ## what is vuex-asr?
 
