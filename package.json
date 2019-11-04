@@ -7,8 +7,8 @@
   "main": "src/vuex-asr.js",
   "module": "src/vuex-asr.js",
   "bugs": {
-    "url" : "https://github.com/vuex-asr/vuex-asr/issues",
-    "email" : "vuex.asr@gmail.com"
+    "url": "https://github.com/vuex-asr/vuex-asr/issues",
+    "email": "vuex.asr@gmail.com"
   },
   "private": false,
   "scripts": {
