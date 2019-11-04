@@ -1,10 +1,6 @@
----
-home: true
-heroText: vuex-asr
-heroImage: ./vuex-asr-logo.png
----
-
-# Documentation
+# vuex-asr
+## Automated Store Resolution for Vue
+### Documentation
 
 * Version: 0.7.41
 * License M.I.T.
@@ -14,7 +10,11 @@ heroImage: ./vuex-asr-logo.png
 * [linkedIn](https://www.linkedin.com/in/joriswenting/).
 * [contribute](./helpers/contribute.html)
 
-## what is vuex-asr?
+::: tip
+For a quick overview of a full implementation of vuex-asr, take a look at the codesandbox [todo-mvc-example](https://codesandbox.io/s/todo-mvc-with-vuex-asr-olcvq?fontsize=14&module=%2Fsrc%2FApp.vue)
+::: 
+
+### what is vuex-asr?
 
 Vuex-asr removes the necessity to describe your vuex store bindings in the component's script. With vuex-asr you're able to bind [state](step-by-step-guide/hello-world-example.html), [getters](step-by-step-guide/getters-example.html), [mutations](step-by-step-guide/mutations.html) and [actions](step-by-step-guide/actions.html) from the component's attributes\directives:
 
@@ -27,18 +27,14 @@ The plugin automatically resolves  bindings and is able to map them from the com
 
 vuex-asr provides full interactivity with vuex.
 
-### generic components able to be stateful
-
-With vuex-asr you could start developing your codebase with generic components (no bindings described in the component code) and hook them up to the vuex ecosystem, by the attribute of the component.
-
-## install
+### install
 
 You can install the package via NPM:
 
 ```bash
 npm install vuex-asr
 ```
-### setup
+#### setup
 
 In your (typically) main.js:
 
@@ -57,7 +53,7 @@ new Vue({
 ```
 and you're ready to use vuex-asr.
 
-## simple example
+### simple example
 
 Assume you have a vuex store:
 
@@ -103,7 +99,7 @@ This will bind the the state item `notifyMessage`, living in the namespace `User
 If `User/Settings/notifyMessage` updates in the store, the `message` in `<message-component>` will update too.
 :::
 
-## a more complex implementation
+### a more complex implementation
 
 We could also use it to provide more complex components with store bindings:
 
