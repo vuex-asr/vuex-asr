@@ -10,7 +10,7 @@
 * [contribute](./helpers/contribute.html)
 
 ::: tip
-For a quick overview of a full implementation of vuex-asr, take a look at the codesandbox [todo-mvc-example](https://codesandbox.io/s/todo-mvc-with-vuex-asr-olcvq?fontsize=14&module=%2Fsrc%2FApp.vue)
+For a quick overview of a full implementation of vuex-asr, take a look at the codesandbox [todo-mvc-example](https://codesandbox.io/s/template-test-tdvm7?fontsize=14&module=%2Fsrc%2FApp.vue)
 ::: 
 
 ### what is vuex-asr?
