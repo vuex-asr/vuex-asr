@@ -1,6 +1,6 @@
 {
   "name": "vuex-asr",
-  "version": "0.7.44",
+  "version": "0.7.45",
   "author": "Joris Wenting",
   "homepage": "https://github.com/vuex-asr/",
   "license": "MIT",
@@ -10,6 +10,14 @@
     "url": "https://github.com/vuex-asr/vuex-asr/issues",
     "email": "vuex.asr@gmail.com"
   },
+  "keywords": [
+    "vue",
+    "vuex",
+    "vuex-asr",
+    "statemanagement",
+    "storemanagement",
+    "Front End MVC"
+  ],
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve --watch",
