@@ -17,19 +17,10 @@ export default class PopulateComputed {
     // that are going to be set below.
     // See './asr-remove-old-bindings.js' (method: unSetAsrComputed)
 
-    this.initializeComputed(this.vueInstance);
     this.setEmptyComputedMethod("asrRegisterStart", "Here the register starts");
     this.createMappingsFromBindersArray(bindersArray);
     this.createMappingsFromPassesArray(passesArray);
     this.setEmptyComputedMethod("asrRegisterEnd", "Here the register end");
-  }
-
-  // If computed is not set on the instance it needs to be initialized
-
-  initializeComputed(vueInstance) {
-    if (vueInstance.$options.hasOwnProperty("computed") === false) {
-      vueInstance.$options.computed = [];
-    }
   }
 
   // Helper method for register termination
