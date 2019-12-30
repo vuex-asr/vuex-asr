@@ -20,6 +20,10 @@ const VuexAsr = {
         "asrDebug"
       ],
 
+      // Add computed to make sure there is a computed property on each component
+
+      computed: {},
+
       /*
                   beforeCreate()
 
