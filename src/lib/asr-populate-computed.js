@@ -45,10 +45,8 @@ export default class PopulateComputed {
     let dataFunctionDataAfter = {...dataFunctionDataBefore};
 
     bindersArray.forEach(item => {
-      const bindName = (item.alias.length > 0) ? item.alias:item.bind;
-
+        const bindName = item.alias !== null && item.alias.length > 0 ? item.alias:item.bind;
       if(dataFunctionDataBefore.hasOwnProperty(bindName)) {
-        console.log("bindName", bindName);
         delete dataFunctionDataAfter[bindName];
       }
     });

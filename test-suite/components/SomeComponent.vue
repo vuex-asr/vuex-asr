@@ -4,6 +4,7 @@
     <p>{{ firstName }}</p>
     <p>{{ lastName }}</p>
     <p>{{ somethingElse }}</p>
+    <p>{{ someLocalComputed }}</p>
   </div>
 </template>
 
@@ -17,19 +18,14 @@
         somethingElse: "jahoeee, this is it!",
       }
     },
-    computed: {},
+    computed: {
+      someLocalComputed: function() {
+        return "someLocalComputed is still here!!";
+      }
+    },
     methods: {},
     watch: {},
-    created(){
-      // console.log("this.$options.computed in created", {...this.$options.computed});
-      // console.log("this.$options.data", this.$options.data);
-      // console.log("this in created", {...this});
-      //
-      // // unset this.message;
-      //
-      // this.$options.data = null;
-      // console.log("this.$options.data", this.$options.data);
-    },
+    created(){},
     mounted(){},
   };
 </script>

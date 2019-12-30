@@ -1,6 +1,6 @@
 # Vuex-ASR - Automated Store Resolution for Vue
 
-* Version: 0.7.48
+* Version: 0.7.49
 * License M.I.T.
 * [Online Documentation](https://vuex-asr.github.io/vuex-asr/)
 * author: Joris Wenting
