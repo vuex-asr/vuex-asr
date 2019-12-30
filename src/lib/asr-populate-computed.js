@@ -18,6 +18,7 @@ export default class PopulateComputed {
     // See './asr-remove-old-bindings.js' (method: unSetAsrComputed)
 
     this.setEmptyComputedMethod("asrRegisterStart", "Here the register starts");
+    this.unsetLocalVariables(bindersArray);
     this.createMappingsFromBindersArray(bindersArray);
     this.createMappingsFromPassesArray(passesArray);
     this.setEmptyComputedMethod("asrRegisterEnd", "Here the register end");
@@ -34,6 +35,42 @@ export default class PopulateComputed {
     this.vueInstance.$options.computed[registerName] =
       mapStateObject[registerName];
   }
+
+  // Unset local variables in data() object to overwrite them with store bindings
+
+  unsetLocalVariables(bindersArray) {
+    const clone = {...this.vueInstance};
+    const dataFunction = clone.$options.data;
+    const dataFunctionDataBefore = dataFunction();
+    let dataFunctionDataAfter = {...dataFunctionDataBefore};
+
+    bindersArray.forEach(item => {
+      const bindName = (item.alias.length > 0) ? item.alias:item.bind;
+
+      if(dataFunctionDataBefore.hasOwnProperty(bindName)) {
+        console.log("bindName", bindName);
+        delete dataFunctionDataAfter[bindName];
+      }
+    });
+
+    const newDataFunctionForVueInstance = function(){
+      return dataFunctionDataAfter;
+    };
+
+    this.vueInstance.$options.data = newDataFunctionForVueInstance;
+
+    const messageObject = {
+      before: dataFunctionDataBefore,
+      after: dataFunctionDataAfter
+    };
+
+    this.Report.pushMessage(
+        `Local Data has been overwritten by store items:`,
+        messageObject,
+    );
+  }
+
+
 
   // In this method we iterate over the bindersArray
 
