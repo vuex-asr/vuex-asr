@@ -39,19 +39,20 @@ export default class PopulateComputed {
   // Unset local variables in data() object to overwrite them with store bindings
 
   unsetLocalVariables(bindersArray) {
-    const clone = {...this.vueInstance};
+    const clone = { ...this.vueInstance };
     const dataFunction = clone.$options.data;
     const dataFunctionDataBefore = dataFunction();
-    let dataFunctionDataAfter = {...dataFunctionDataBefore};
+    let dataFunctionDataAfter = { ...dataFunctionDataBefore };
 
     bindersArray.forEach(item => {
-        const bindName = item.alias !== null && item.alias.length > 0 ? item.alias:item.bind;
-      if(dataFunctionDataBefore.hasOwnProperty(bindName)) {
+      const bindName =
+        item.alias !== null && item.alias.length > 0 ? item.alias : item.bind;
+      if (dataFunctionDataBefore.hasOwnProperty(bindName)) {
         delete dataFunctionDataAfter[bindName];
       }
     });
 
-    const newDataFunctionForVueInstance = function(){
+    const newDataFunctionForVueInstance = function() {
       return dataFunctionDataAfter;
     };
 
@@ -63,12 +64,10 @@ export default class PopulateComputed {
     };
 
     this.Report.pushMessage(
-        `Local Data has been overwritten by store items:`,
-        messageObject,
+      `Local Data has been overwritten by store items:`,
+      messageObject
     );
   }
-
-
 
   // In this method we iterate over the bindersArray
 
@@ -120,19 +119,19 @@ export default class PopulateComputed {
       if (hasAlias) {
         this.vueInstance.$options.computed[item.alias] = {
           get() {
-            return this.$parent[item.bind];
+            return this.vueInstance.$parent[item.bind];
           },
           set(value) {
-            this.$parent[item.bind] = value;
+            this.vueInstance.$parent[item.bind] = value;
           }
         };
       } else {
         this.vueInstance.$options.computed[item.bind] = {
           get() {
-            return this.$parent[item.bind];
+            return this.vueInstance.$parent[item.bind];
           },
           set(value) {
-            this.$parent[item.bind] = value;
+            this.vueInstance.$parent[item.bind] = value;
           }
         };
       }

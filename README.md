@@ -1,6 +1,6 @@
 # Vuex-ASR - Automated Store Resolution for Vue
 
-* Version: 0.7.49
+* Version: 0.7.50
 * License M.I.T.
 * [Online Documentation](https://vuex-asr.github.io/vuex-asr/)
 * author: Joris Wenting
@@ -10,7 +10,7 @@
 
 ## Update
 30-12-2019: overwrite local variables with store bindings! Documentation will be updated soon with examples.
-
+9-1-2019: fix broken asr-pass functionality
 
 ## Example TodoMVC app
 For a quick overview of a full implementation of vuex-asr, take a look at the codesandbox [todo-mvc-example](https://codesandbox.io/s/template-test-tdvm7?fontsize=14&module=%2Fsrc%2FApp.vue) or visit the [git-repository](https://github.com/vuex-asr/todo-mvc-vuex-asr).
