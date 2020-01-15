@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>hello world example | Vuex ASR</title>
+    <meta name="description" content="Automated store resolution for Vue.js">
+    <link rel="icon" href="../vue-logo.png">
+    
+    <link rel="preload" href="/vuex-asr/assets/css/0.styles.ba1a25a1.css" as="style"><link rel="preload" href="/vuex-asr/assets/js/app.51a1fadf.js" as="script"><link rel="preload" href="/vuex-asr/assets/js/2.b4a928f2.js" as="script"><link rel="preload" href="/vuex-asr/assets/js/20.d5e4f501.js" as="script"><link rel="prefetch" href="/vuex-asr/assets/js/10.d050881c.js"><link rel="prefetch" href="/vuex-asr/assets/js/11.4a0808ab.js"><link rel="prefetch" href="/vuex-asr/assets/js/12.3c479c42.js"><link rel="prefetch" href="/vuex-asr/assets/js/13.3250c310.js"><link rel="prefetch" href="/vuex-asr/assets/js/14.62c5e3bf.js"><link rel="prefetch" href="/vuex-asr/assets/js/15.1246035b.js"><link rel="prefetch" href="/vuex-asr/assets/js/16.f2a6d574.js"><link rel="prefetch" href="/vuex-asr/assets/js/17.c0c4ba46.js"><link rel="prefetch" href="/vuex-asr/assets/js/18.7f284ab7.js"><link rel="prefetch" href="/vuex-asr/assets/js/19.af7a8adf.js"><link rel="prefetch" href="/vuex-asr/assets/js/21.4073ea7c.js"><link rel="prefetch" href="/vuex-asr/assets/js/22.46346157.js"><link rel="prefetch" href="/vuex-asr/assets/js/23.4ac41cbb.js"><link rel="prefetch" href="/vuex-asr/assets/js/24.72b4b854.js"><link rel="prefetch" href="/vuex-asr/assets/js/25.3f626a44.js"><link rel="prefetch" href="/vuex-asr/assets/js/26.ed8ed3d3.js"><link rel="prefetch" href="/vuex-asr/assets/js/27.8c51c981.js"><link rel="prefetch" href="/vuex-asr/assets/js/28.86d49fe1.js"><link rel="prefetch" href="/vuex-asr/assets/js/29.4ef76ef5.js"><link rel="prefetch" href="/vuex-asr/assets/js/3.2b8ad3c3.js"><link rel="prefetch" href="/vuex-asr/assets/js/30.7ad3ecff.js"><link rel="prefetch" href="/vuex-asr/assets/js/31.a8eb0654.js"><link rel="prefetch" href="/vuex-asr/assets/js/32.eb4c2bac.js"><link rel="prefetch" href="/vuex-asr/assets/js/33.00186259.js"><link rel="prefetch" href="/vuex-asr/assets/js/34.7b77e1ee.js"><link rel="prefetch" href="/vuex-asr/assets/js/35.26de21a8.js"><link rel="prefetch" href="/vuex-asr/assets/js/36.b062e03a.js"><link rel="prefetch" href="/vuex-asr/assets/js/37.bdead487.js"><link rel="prefetch" href="/vuex-asr/assets/js/38.2e2b47dd.js"><link rel="prefetch" href="/vuex-asr/assets/js/4.6cc4b15c.js"><link rel="prefetch" href="/vuex-asr/assets/js/5.51ffd98f.js"><link rel="prefetch" href="/vuex-asr/assets/js/6.f1224752.js"><link rel="prefetch" href="/vuex-asr/assets/js/7.3659af3a.js"><link rel="prefetch" href="/vuex-asr/assets/js/8.366b1b49.js"><link rel="prefetch" href="/vuex-asr/assets/js/9.af028c38.js">
+    <link rel="stylesheet" href="/vuex-asr/assets/css/0.styles.ba1a25a1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vuex-asr/" class="home-link router-link-active"><!----> <span class="site-name">Vuex ASR</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vuex-asr/" class="nav-link">Home</a></div><div class="nav-item"><a href="/vuex-asr/step-by-step-guide/hello-world-example.html" class="nav-link">Guide</a></div><div class="nav-item"><a href="/vuex-asr/helpers/cheat-sheet.html" class="nav-link">Cheatsheet</a></div><div class="nav-item"><a href="/vuex-asr/helpers/contribute.html" class="nav-link">Contribute</a></div><div class="nav-item"><a href="https://github.com/vuex-asr/vuex-asr" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/vuex-asr/" class="nav-link">Home</a></div><div class="nav-item"><a href="/vuex-asr/step-by-step-guide/hello-world-example.html" class="nav-link">Guide</a></div><div class="nav-item"><a href="/vuex-asr/helpers/cheat-sheet.html" class="nav-link">Cheatsheet</a></div><div class="nav-item"><a href="/vuex-asr/helpers/contribute.html" class="nav-link">Contribute</a></div><div class="nav-item"><a href="https://github.com/vuex-asr/vuex-asr" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Introduction</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/vuex-asr/" class="sidebar-link">vuex-asr</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Step by step guide</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/vuex-asr/step-by-step-guide/prerequisite.html" class="sidebar-link">prerequisite</a></li><li><a href="/vuex-asr/step-by-step-guide/installation.html" class="sidebar-link">installation</a></li><li><a href="/vuex-asr/step-by-step-guide/hello-world-example.html" class="sidebar-link">hello world example</a></li><li><a href="/vuex-asr/step-by-step-guide/getters-example.html" class="sidebar-link">hello world example with a getter</a></li><li><a href="/vuex-asr/step-by-step-guide/hello-world-of-2-way-binding.html" class="sidebar-link">hello world of 2 way binding</a></li><li><a href="/vuex-asr/step-by-step-guide/mutations.html" class="sidebar-link">mutations</a></li><li><a href="/vuex-asr/step-by-step-guide/actions.html" class="sidebar-link">actions</a></li><li><a href="/vuex-asr/step-by-step-guide/aliasing.html" class="sidebar-link">aliasing</a></li><li><a href="/vuex-asr/step-by-step-guide/namespacing.html" class="sidebar-link">namespacing</a></li><li><a href="/vuex-asr/step-by-step-guide/passing-bindings.html" class="sidebar-link">passing a binding to a child component</a></li><li><a href="/vuex-asr/step-by-step-guide/binding-multiple-objects-to-a-component.html" class="sidebar-link">binding multiple objects to a component</a></li><li><a href="/vuex-asr/step-by-step-guide/binding-a-configuration.html" class="sidebar-link">binding a configuration</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Helpers</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/vuex-asr/helpers/asr-debug.html" class="sidebar-link">asr-debug</a></li><li><a href="/vuex-asr/helpers/working-with-the-test-suite.html" class="sidebar-link">working with the test-suite</a></li><li><a href="/vuex-asr/helpers/cheat-sheet.html" class="sidebar-link">cheatsheet</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="hello-world-example"><a href="#hello-world-example" aria-hidden="true" class="header-anchor">#</a> hello world example</h1> <p>In the example below I'll give you an example of the most basic implementation of VUEX-ASR.</p> <p>For a quick overview go to the sandbox environment to follow along:</p> <p><a href="https://codesandbox.io/s/manual-hello-world-example-3tx2w" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h1 id="preamble"><a href="#preamble" aria-hidden="true" class="header-anchor">#</a> preamble</h1> <p>The setup assumes having a component based VUE setup implementing VUEX, you could checkout the basic configuration of this in the <a href="https://www.notion.so/hello-world-example-f301739ea9f743959fd6f741d14d3a47#d37790323d1d4b788fba3adb5c20e041" target="_blank" rel="noopener noreferrer">sandbox environment<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>.</p> <h2 id="the-store"><a href="#the-store" aria-hidden="true" class="header-anchor">#</a> the store</h2> <p>Now the store is the central place where to put all the variables used throughout your application front end:</p> <pre><code>// src/vuex/store.js
+
+import Vue from &quot;vue&quot;;
+import Vuex from &quot;vuex&quot;;
+
+Vue.use(Vuex);
+
+const Store = new Vuex.Store({
+  state: {
+    message: &quot;This is a message in the Root of VUEX&quot;,
+  }
+});
+
+export { Store };
+</code></pre> <p>As you can see, we've created a variable <code>message</code> in the state section of the store.</p> <h2 id="the-application-file-main-js"><a href="#the-application-file-main-js" aria-hidden="true" class="header-anchor">#</a> the application file main.js</h2> <p>In the main.js file we implement the store we've created in <code>src/vuex/store.js</code></p> <pre><code>// src/main.js
+
+import Vue from &quot;vue&quot;;
+import App from &quot;./App.vue&quot;;
+import { Store } from &quot;./vuex/store&quot;;
+import VuexASR from &quot;./plugins/vuex-asr/vuex-asr&quot;;
+
+Vue.use(VuexASR);
+
+new Vue({
+  render: h =&gt; h(App),
+  store: Store
+}).$mount(&quot;#app&quot;);
+</code></pre> <p>And actually this is all we have to do to start making use of the VuexASR functionality.</p> <h2 id="the-app-component"><a href="#the-app-component" aria-hidden="true" class="header-anchor">#</a> the App component</h2> <p>In the App.vue component we use to demonstrate the use of vuex-asr to bind the <code>message</code> value from the store to a component:</p> <pre><code>// src/App.vue
+
+&lt;template&gt;
+  &lt;div id=&quot;app&quot;&gt;
+    &lt;example-message asr-bind-state=&quot;message&quot;/&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+import ExampleMessage from &quot;./components/ExampleMessage&quot;;
+
+export default {
+  name: &quot;App&quot;,
+  components: {
+    ExampleMessage,
+  }
+};
+&lt;/script&gt;
+</code></pre> <p>Notice the <code>asr-bind-state</code> property in the <code>&lt;example-message&gt;</code> component. This binds the <code>message</code> variable from the store to the component. If the store updates the message variable the component that it's bound to will update automatically.</p> <h2 id="the-example-message-component"><a href="#the-example-message-component" aria-hidden="true" class="header-anchor">#</a> the Example Message component</h2> <p>In the example component we now just can use the variable <code>message</code></p> <pre><code>// src/components/ExampleMessage.vue
+
+&lt;template&gt;
+  &lt;p&gt;&lt;/p&gt;
+&lt;/template&gt;
+</code></pre> <p>This is the simplest implementation of VUEX-ASR.</p> <p>But hold on we're not completely done yet, just to show a primitive example of two-way-binding with VUEX-ASR we need to create an input so we can <strong>mutate</strong> the variable and see if this actually updates the variable in dependent components...</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/vuex-asr/assets/js/app.51a1fadf.js" defer></script><script src="/vuex-asr/assets/js/2.b4a928f2.js" defer></script><script src="/vuex-asr/assets/js/20.d5e4f501.js" defer></script>
+  </body>
+</html>
