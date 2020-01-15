@@ -17,11 +17,12 @@ export default class PopulateComputed {
     // that are going to be set below.
     // See './asr-remove-old-bindings.js' (method: unSetAsrComputed)
 
+    this.unsetDataItemsInVueInstanceThatAreOverwrittenByBindings(bindersArray);
+
     this.setEmptyComputedMethod("asrRegisterStart", "Here the register starts");
-    this.unsetLocalVariables(bindersArray);
     this.createMappingsFromBindersArray(bindersArray);
     this.createMappingsFromPassesArray(passesArray);
-    this.setEmptyComputedMethod("asrRegisterEnd", "Here the register end");
+    this.setEmptyComputedMethod("asrRegisterEnd", "Here the register ends");
   }
 
   // Helper method for register termination
@@ -37,21 +38,38 @@ export default class PopulateComputed {
   }
 
   // Unset local variables in data() object to overwrite them with store bindings
+  //
+  unsetDataItemsInVueInstanceThatAreOverwrittenByBindings(bindersArray) {
+    const clone = { ...this.vueInstance };
+    const dataFunction = clone.$options.data;
+
+    function isFunction(functionToCheck) {
+      return (
+        functionToCheck &&
+        {}.toString.call(functionToCheck) === "[object Function]"
+      );
+    }
+
+    if (isFunction(dataFunction)) {
+      this.unsetLocalVariables(bindersArray);
+    }
+  }
 
   unsetLocalVariables(bindersArray) {
-    const clone = {...this.vueInstance};
+    const clone = { ...this.vueInstance };
     const dataFunction = clone.$options.data;
     const dataFunctionDataBefore = dataFunction();
-    let dataFunctionDataAfter = {...dataFunctionDataBefore};
+    let dataFunctionDataAfter = { ...dataFunctionDataBefore };
 
     bindersArray.forEach(item => {
-        const bindName = item.alias !== null && item.alias.length > 0 ? item.alias:item.bind;
-      if(dataFunctionDataBefore.hasOwnProperty(bindName)) {
+      const bindName =
+        item.alias !== null && item.alias.length > 0 ? item.alias : item.bind;
+      if (dataFunctionDataBefore.hasOwnProperty(bindName)) {
         delete dataFunctionDataAfter[bindName];
       }
     });
 
-    const newDataFunctionForVueInstance = function(){
+    const newDataFunctionForVueInstance = function() {
       return dataFunctionDataAfter;
     };
 
@@ -63,12 +81,10 @@ export default class PopulateComputed {
     };
 
     this.Report.pushMessage(
-        `Local Data has been overwritten by store items:`,
-        messageObject,
+      `Local Data has been overwritten by store items:`,
+      messageObject
     );
   }
-
-
 
   // In this method we iterate over the bindersArray
 
