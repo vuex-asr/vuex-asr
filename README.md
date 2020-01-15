@@ -8,9 +8,6 @@
 * [linkedIn](https://www.linkedin.com/in/joriswenting/).
 * [contribute](https://vuex-asr.github.io/vuex-asr/helpers/contribute.html)
 
-## Update
-30-12-2019: overwrite local variables with store bindings! Documentation will be updated soon with examples.
-
 ## Example TodoMVC app
 For a quick overview of a full implementation of vuex-asr, take a look at the codesandbox [todo-mvc-example](https://codesandbox.io/s/template-test-tdvm7?fontsize=14&module=%2Fsrc%2FApp.vue) or visit the [git-repository](https://github.com/vuex-asr/todo-mvc-vuex-asr).
 
@@ -131,3 +128,30 @@ We could also use it to provide more complex components with store bindings:
 In this case we bind [state](https://vuex-asr.github.io/vuex-asr/step-by-step-guide/hello-world-example.html), [getters](https://vuex-asr.github.io/vuex-asr/step-by-step-guide/getters-example.html), [mutations](https://vuex-asr.github.io/vuex-asr/step-by-step-guide/mutations.html) and [actions](https://vuex-asr.github.io/vuex-asr/step-by-step-guide/actions.html) items to `<some-component>`. 
 
 Follow the [step by step manual](https://vuex-asr.github.io/vuex-asr/step-by-step-guide/hello-world-example.html) to get started it contains sandboxes, so no setup is required to try out all of the examples and fiddle around.
+
+## Update
+30-12-2019: overwrite local variables with store bindings! Documentation will be updated soon with examples.
+15-01-2019: update with some refactoring for better control flow, the `test-suite/views/Sandbox.vue` contains an example on how to overwrite data function properties.
+
+The binding `message`:
+
+```vue
+        <example-message asr-bind-state="message"/>
+```
+
+Will overwite 'message' in the returned object in data and leaves the other attributes in it:
+
+```vue
+    // src/components/ExampleMessage.vue
+
+    ...
+           data() {
+             return {
+               message: "local Message",  // <-- this one
+               firstName: "local firstName",
+               lastName: "local lastName",
+               somethingElse: "jahoeee, this is it!",
+             }
+           },
+    ...
+```

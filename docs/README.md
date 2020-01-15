@@ -9,16 +9,9 @@
 * [linkedIn](https://www.linkedin.com/in/joriswenting/).
 * [contribute](./helpers/contribute.html)
 
-## Update
-30-12-2019: overwrite local variables with store bindings! Documentation will be updated soon with examples.
-
 ::: tip
 For a quick overview of a full implementation of vuex-asr, take a look at the codesandbox [todo-mvc-example](https://codesandbox.io/s/template-test-tdvm7?fontsize=14&module=%2Fsrc%2FApp.vue)
 ::: 
-
-::: tip
-Update: 30-12-2019: overwrite local variables with store bindings!
-:::
 
 ### what is vuex-asr?
 
@@ -132,3 +125,31 @@ In this case we bind [state](step-by-step-guide/hello-world-example.html), [gett
 ::: tip get familiar with the concepts
 [hello world example](step-by-step-guide/hello-world-example.html).
 :::
+
+## Update
+30-12-2019: overwrite local variables with store bindings! Documentation will be updated soon with examples.
+
+15-01-2019: update with some refactoring for better control flow, the `test-suite/views/Sandbox.vue` contains an example on how to overwrite data function properties.
+
+The binding `message`:
+
+```vue
+        <example-message asr-bind-state="message"/>
+```
+
+Will overwite 'message' in the returned object in data and leaves the other attributes in it:
+
+```vue{6}
+    // src/components/ExampleMessage.vue
+
+    ...
+           data() {
+             return {
+               message: "local Message",
+               firstName: "local firstName",
+               lastName: "local lastName",
+               somethingElse: "jahoeee, this is it!",
+             }
+           },
+    ...
+```
