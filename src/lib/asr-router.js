@@ -127,7 +127,10 @@ export default class Router {
       vueInstance.$options.propsData["asrPass"] !== undefined
         ? vueInstance.$options.propsData["asrPass"]
         : false;
-    props.asrDebug = vueInstance.$options.propsData["asrDebug"] === "";
+    props.asrDebug =
+      vueInstance.$options.propsData["asrDebug"] !== false
+        ? vueInstance.$options.propsData["asrDebug"]
+        : false;
     return props;
   }
 
