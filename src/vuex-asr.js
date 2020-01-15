@@ -10,15 +10,36 @@ const VuexAsr = {
                   The 'props' array below translates into the directives of this plugin.
             */
 
-      props: [
-        "asrBindState",
-        "asrBindGetters",
-        "asrBindMutations",
-        "asrBindActions",
-        "asrBindConfig",
-        "asrPass",
-        "asrDebug"
-      ],
+      props: {
+        asrBindState: {
+          type: String,
+          default: null
+        },
+        asrBindGetters: {
+          type: String,
+          default: null
+        },
+        asrBindMutations: {
+          type: String,
+          default: null
+        },
+        asrBindActions: {
+          type: String,
+          default: null
+        },
+        asrBindConfig: {
+          type: String,
+          default: null
+        },
+        asrPass: {
+          type: String,
+          default: null
+        },
+        asrDebug: {
+          type: Boolean,
+          default: false
+        }
+      },
 
       // Add computed to make sure there is a computed property on each component
 
