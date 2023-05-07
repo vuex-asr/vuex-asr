@@ -39,7 +39,7 @@
     "core-js": "^2.6.5",
     "register-service-worker": "^1.6.2",
     "@vue/cli-plugin-babel": "^3.12.0",
-    "@vue/cli-plugin-e2e-nightwatch": "^3.12.0",
+    "@vue/cli-plugin-e2e-nightwatch": "^5.0.8",
     "@vue/cli-plugin-eslint": "^3.12.0",
     "@vue/cli-plugin-pwa": "^3.12.0",
     "@vue/cli-plugin-unit-mocha": "^3.12.0",
